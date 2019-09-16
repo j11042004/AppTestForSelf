@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	/*Tahoma 無襯線字*/
+	font: normal 120% Tahoma,Arial;
+	background: #ccc;
+}
+#theForm{
+	margin: 50px auto;
+	width: 180px;
+	background: #fff;
+	padding: 15px;
+	border: 1px , solid , #bbb;
+}
+/*首字轉大寫*/
+label,#submit{
+	text-transform: capitalize;
+}
+#theForm div{
+	margin: 5px 10px;
+}

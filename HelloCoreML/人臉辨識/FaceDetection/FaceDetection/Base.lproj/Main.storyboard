@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fTA-KR-fI7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--臉部偵測-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FaceDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O2y-gc-mAm">
+                                <rect key="frame" x="0.0" y="167" width="375" height="333.5"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBw-57-cI7">
+                                <rect key="frame" x="20" y="117" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="人臉辨識"/>
+                                <connections>
+                                    <action selector="faceDetection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSw-xf-VL8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O2y-gc-mAm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="25f-hO-e1x"/>
+                            <constraint firstItem="O2y-gc-mAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6VY-fU-QnY"/>
+                            <constraint firstItem="O2y-gc-mAm" firstAttribute="top" secondItem="dBw-57-cI7" secondAttribute="bottom" constant="20" id="6xc-ye-Kve"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dBw-57-cI7" secondAttribute="trailing" constant="20" id="AfE-Nt-8lh"/>
+                            <constraint firstItem="dBw-57-cI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B2N-wC-02T"/>
+                            <constraint firstItem="O2y-gc-mAm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="dgK-iJ-SGN"/>
+                            <constraint firstItem="O2y-gc-mAm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xfT-S8-bB8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="臉部偵測" id="9Sp-Ib-HqB"/>
+                    <connections>
+                        <outlet property="imageView" destination="O2y-gc-mAm" id="OOJ-2e-cAC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="26.53673163418291"/>
+        </scene>
+        <!--臉部 Mark-->
+        <scene sceneID="SDf-6G-8QH">
+            <objects>
+                <viewController storyboardIdentifier="MarkViewController" id="aLf-Xp-OHf" customClass="MarkViewController" customModule="FaceDetection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJl-RE-hIy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mgk-TF-KQk">
+                                <rect key="frame" x="0.0" y="167" width="375" height="333.5"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyN-ge-XEm">
+                                <rect key="frame" x="20" y="117" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="臉部座標點"/>
+                                <connections>
+                                    <action selector="faceLandMark:" destination="aLf-Xp-OHf" eventType="touchUpInside" id="gdX-lh-7mP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lyN-ge-XEm" firstAttribute="leading" secondItem="2bk-lU-tvV" secondAttribute="leading" constant="20" id="CqX-RT-DkZ"/>
+                            <constraint firstItem="mgk-TF-KQk" firstAttribute="centerY" secondItem="wJl-RE-hIy" secondAttribute="centerY" id="G2n-qa-Wvg"/>
+                            <constraint firstItem="2bk-lU-tvV" firstAttribute="trailing" secondItem="lyN-ge-XEm" secondAttribute="trailing" constant="20" id="OwG-lP-MTS"/>
+                            <constraint firstItem="2bk-lU-tvV" firstAttribute="trailing" secondItem="mgk-TF-KQk" secondAttribute="trailing" id="UHo-zg-fHZ"/>
+                            <constraint firstItem="mgk-TF-KQk" firstAttribute="top" secondItem="lyN-ge-XEm" secondAttribute="bottom" constant="20" id="VTQ-zp-CZ9"/>
+                            <constraint firstItem="mgk-TF-KQk" firstAttribute="centerX" secondItem="wJl-RE-hIy" secondAttribute="centerX" id="Y8r-Mh-uz3"/>
+                            <constraint firstItem="mgk-TF-KQk" firstAttribute="height" secondItem="wJl-RE-hIy" secondAttribute="height" multiplier="1/2" id="j0h-Je-6Ad"/>
+                            <constraint firstItem="mgk-TF-KQk" firstAttribute="leading" secondItem="2bk-lU-tvV" secondAttribute="leading" id="jag-65-fZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2bk-lU-tvV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="臉部 Mark" id="ULO-pK-31q"/>
+                    <connections>
+                        <outlet property="imgView" destination="mgk-TF-KQk" id="QEZ-fJ-Xr6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVt-hW-m0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="753"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oEC-xZ-kLx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fTA-KR-fI7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="70f-1u-BKB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hcJ-vJ-Ndt"/>
+                        <segue destination="aLf-Xp-OHf" kind="relationship" relationship="viewControllers" id="F2R-ec-SpX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2P-R7-Ret" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191" y="395"/>
+        </scene>
+    </scenes>
+</document>

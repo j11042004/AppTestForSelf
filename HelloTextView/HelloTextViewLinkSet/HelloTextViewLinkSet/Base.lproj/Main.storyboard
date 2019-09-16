@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloTextViewLinkSet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Loi-fb-cjL">
+                                <rect key="frame" x="20" y="64" width="374" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="PP4-rK-Zil"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjq-j0-OgG">
+                                <rect key="frame" x="20" y="264" width="111.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="72g-EG-TGS"/>
+                                </constraints>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="celear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UQs-A0-9PN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddo-3I-IKc">
+                                <rect key="frame" x="151.5" y="264" width="111" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xBm-dY-aZJ"/>
+                                </constraints>
+                                <state key="normal" title="Message">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZX9-uj-sLA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xno-2w-Lna">
+                                <rect key="frame" x="282.5" y="264" width="111.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pRA-Ay-PLQ"/>
+                                </constraints>
+                                <state key="normal" title="Url">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addUrl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwy-3u-zpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bjq-j0-OgG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9l7-jf-ZRC"/>
+                            <constraint firstItem="ddo-3I-IKc" firstAttribute="leading" secondItem="bjq-j0-OgG" secondAttribute="trailing" constant="20" id="Brp-16-PAX"/>
+                            <constraint firstItem="ddo-3I-IKc" firstAttribute="top" secondItem="Loi-fb-cjL" secondAttribute="bottom" constant="50" id="Ca7-Lh-VxV"/>
+                            <constraint firstItem="bjq-j0-OgG" firstAttribute="top" secondItem="Loi-fb-cjL" secondAttribute="bottom" constant="50" id="GCp-iE-IPl"/>
+                            <constraint firstItem="Xno-2w-Lna" firstAttribute="leading" secondItem="ddo-3I-IKc" secondAttribute="trailing" constant="20" id="J6y-xz-2uj"/>
+                            <constraint firstItem="Xno-2w-Lna" firstAttribute="top" secondItem="Loi-fb-cjL" secondAttribute="bottom" constant="50" id="Ja4-c0-f7F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Loi-fb-cjL" secondAttribute="trailing" constant="20" id="LRJ-9h-DGw"/>
+                            <constraint firstItem="Xno-2w-Lna" firstAttribute="width" secondItem="ddo-3I-IKc" secondAttribute="width" id="Nb7-E7-WnU"/>
+                            <constraint firstItem="bjq-j0-OgG" firstAttribute="width" secondItem="ddo-3I-IKc" secondAttribute="width" id="gdk-XK-zpv"/>
+                            <constraint firstItem="Loi-fb-cjL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="idV-Tg-PxM"/>
+                            <constraint firstItem="Loi-fb-cjL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="nK0-Xp-tsV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xno-2w-Lna" secondAttribute="trailing" constant="20" id="pGY-m8-ujD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Loi-fb-cjL" id="LZG-k4-iLm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

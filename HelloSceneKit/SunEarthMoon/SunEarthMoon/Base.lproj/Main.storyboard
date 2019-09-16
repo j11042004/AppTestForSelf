@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunEarthMoon" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ih8-Ao-atH"/>
+                        <viewControllerLayoutGuide type="bottom" id="jAu-gJ-Xzh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjT-VZ-IW9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </sceneKitView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2500" minValue="2500" maxValue="10000" translatesAutoresizingMaskIntoConstraints="NO" id="AUF-PE-4bd">
+                                <rect key="frame" x="-2" y="637" width="379" height="31"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="F3B-Yy-Krj"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GjT-VZ-IW9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I92-Sw-dJd"/>
+                            <constraint firstItem="GjT-VZ-IW9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IyA-0a-Jhh"/>
+                            <constraint firstItem="jAu-gJ-Xzh" firstAttribute="top" secondItem="AUF-PE-4bd" secondAttribute="bottom" id="NTT-wQ-dAR"/>
+                            <constraint firstItem="AUF-PE-4bd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zyt-xh-CvM"/>
+                            <constraint firstItem="GjT-VZ-IW9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="cv2-zD-rRj"/>
+                            <constraint firstItem="AUF-PE-4bd" firstAttribute="width" secondItem="GjT-VZ-IW9" secondAttribute="width" id="dz9-gp-gtQ"/>
+                            <constraint firstItem="GjT-VZ-IW9" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="yHd-w0-dfA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="GjT-VZ-IW9" id="aTW-Wl-8yq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

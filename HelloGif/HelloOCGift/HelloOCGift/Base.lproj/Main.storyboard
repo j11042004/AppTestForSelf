@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W9p-mP-YML">
+                                <rect key="frame" x="84.333333333333329" y="20.000000000000014" width="245.33333333333337" height="245.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="5ji-71-wRU"/>
+                                    <constraint firstAttribute="width" secondItem="W9p-mP-YML" secondAttribute="height" id="nbZ-Ei-yMo"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5ji-71-wRU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="5ji-71-wRU"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0b6-4w-xqt" customClass="YYAnimatedImageView">
+                                <rect key="frame" x="84.333333333333329" y="490.66666666666669" width="245.33333333333337" height="245.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0b6-4w-xqt" secondAttribute="height" id="iCB-Hp-6zd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W9p-mP-YML" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9ji-70-X1O"/>
+                            <constraint firstItem="W9p-mP-YML" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A8Y-1t-kzz"/>
+                            <constraint firstItem="0b6-4w-xqt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/3" id="JUK-CP-kr1"/>
+                            <constraint firstItem="W9p-mP-YML" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/3" id="c1u-X1-KkZ"/>
+                            <constraint firstItem="0b6-4w-xqt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qzY-Ed-ZDX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0b6-4w-xqt" secondAttribute="bottom" id="sZM-e4-za6"/>
+                            <constraint firstItem="W9p-mP-YML" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="xwK-a8-8fP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xwK-a8-8fP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="xwK-a8-8fP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="YYImageView" destination="0b6-4w-xqt" id="OIg-Ba-XFs"/>
+                        <outlet property="imageView" destination="W9p-mP-YML" id="88H-ie-AfR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

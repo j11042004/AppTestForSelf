@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimateView" customModule="HelloViewAnimation" customModuleProvider="target">
+            <connections>
+                <outlet property="selectButton" destination="hIq-du-Sb1" id="Nxe-It-c03"/>
+                <outlet property="showImgView" destination="jaH-Hp-o2C" id="39Z-sJ-ztM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIq-du-Sb1">
+                    <rect key="frame" x="37.5" y="413.5" width="300" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="SBV-HS-xJw"/>
+                        <constraint firstAttribute="height" constant="40" id="rDj-4Z-7Az"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="sayHello:" destination="-1" eventType="touchUpInside" id="7UT-MX-WJO"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-Hp-o2C">
+                    <rect key="frame" x="87" y="113.5" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jaH-Hp-o2C" secondAttribute="height" id="2Dv-Te-NGM"/>
+                        <constraint firstAttribute="width" constant="200" id="xkY-1r-Egf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hIq-du-Sb1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="V4h-JQ-8Y9"/>
+                <constraint firstItem="hIq-du-Sb1" firstAttribute="top" secondItem="jaH-Hp-o2C" secondAttribute="bottom" constant="100" id="YN4-fr-PqX"/>
+                <constraint firstItem="jaH-Hp-o2C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fR7-gS-nWx"/>
+                <constraint firstItem="hIq-du-Sb1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="100" id="jeV-xv-i4f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

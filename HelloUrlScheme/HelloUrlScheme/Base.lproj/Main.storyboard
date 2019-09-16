@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloUrlScheme" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoY-5f-efY">
+                                <rect key="frame" x="149.5" y="318.5" width="76" height="30"/>
+                                <state key="normal" title="開啟 App 2">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openApp2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i2i-oe-Hrz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaA-aX-aJ5">
+                                <rect key="frame" x="166" y="267.5" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXt-UI-16x">
+                                <rect key="frame" x="154" y="368.5" width="66" height="30"/>
+                                <state key="normal" title="開啟 豪爺">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openUwinclub:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2R-kz-VzQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mXt-UI-16x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="No3-6h-sOB"/>
+                            <constraint firstItem="VoY-5f-efY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RSN-T1-CB9"/>
+                            <constraint firstItem="gaA-aX-aJ5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wdn-6j-gPn"/>
+                            <constraint firstItem="VoY-5f-efY" firstAttribute="top" secondItem="gaA-aX-aJ5" secondAttribute="bottom" constant="30" id="X0w-sU-HDT"/>
+                            <constraint firstItem="VoY-5f-efY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zqz-Ay-Ldp"/>
+                            <constraint firstItem="mXt-UI-16x" firstAttribute="top" secondItem="VoY-5f-efY" secondAttribute="bottom" constant="20" id="kdu-W0-88z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="valueLabel" destination="gaA-aX-aJ5" id="rbz-Ea-Ezx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0453411720DCCBEA00859E23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453411620DCCBEA00859E23 /* AppDelegate.swift */; };
+		0453411920DCCBEA00859E23 /* ChatMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453411820DCCBEA00859E23 /* ChatMessageViewController.swift */; };
+		0453411C20DCCBEA00859E23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0453411A20DCCBEA00859E23 /* Main.storyboard */; };
+		0453411E20DCCBEB00859E23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0453411D20DCCBEB00859E23 /* Assets.xcassets */; };
+		0453412120DCCBEB00859E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0453411F20DCCBEB00859E23 /* LaunchScreen.storyboard */; };
+		0453412920DCCD0800859E23 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0453412820DCCD0800859E23 /* MessageKit.framework */; };
+		0453412B20DCCFB600859E23 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453412A20DCCFB600859E23 /* Message.swift */; };
+		04735A3820DCDE7B0024693A /* ChatMessageViewcontroller+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04735A3720DCDE7B0024693A /* ChatMessageViewcontroller+Extension.swift */; };
+		04735A3A20DCEB550024693A /* avatar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04735A3920DCEB550024693A /* avatar.jpg */; };
+		04735A3C20DCF5640024693A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04735A3B20DCF5640024693A /* DateExtension.swift */; };
+		049FE81E20E09D2F00AD1686 /* sakura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 049FE81D20E09D2F00AD1686 /* sakura.jpg */; };
+		54CB4864D9981A220E924211 /* Pods_HelloMessagekitFamework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3942C9F7FAC86408A8989AAD /* Pods_HelloMessagekitFamework.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0453411320DCCBEA00859E23 /* HelloMessagekitFamework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloMessagekitFamework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0453411620DCCBEA00859E23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0453411820DCCBEA00859E23 /* ChatMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageViewController.swift; sourceTree = "<group>"; };
+		0453411B20DCCBEA00859E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0453411D20DCCBEB00859E23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0453412020DCCBEB00859E23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0453412220DCCBEB00859E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0453412820DCCD0800859E23 /* MessageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MessageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0453412A20DCCFB600859E23 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		04735A3720DCDE7B0024693A /* ChatMessageViewcontroller+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatMessageViewcontroller+Extension.swift"; sourceTree = "<group>"; };
+		04735A3920DCEB550024693A /* avatar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = avatar.jpg; sourceTree = "<group>"; };
+		04735A3B20DCF5640024693A /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		049FE81D20E09D2F00AD1686 /* sakura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sakura.jpg; sourceTree = "<group>"; };
+		3942C9F7FAC86408A8989AAD /* Pods_HelloMessagekitFamework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloMessagekitFamework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA10A52FD66523A0725688F /* Pods-HelloMessagekitFamework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMessagekitFamework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMessagekitFamework/Pods-HelloMessagekitFamework.debug.xcconfig"; sourceTree = "<group>"; };
+		839186EA2B18EC8FAA0277C3 /* Pods-HelloMessagekitFamework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloMessagekitFamework.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloMessagekitFamework/Pods-HelloMessagekitFamework.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0453411020DCCBEA00859E23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0453412920DCCD0800859E23 /* MessageKit.framework in Frameworks */,
+				54CB4864D9981A220E924211 /* Pods_HelloMessagekitFamework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0453410A20DCCBE900859E23 = {
+			isa = PBXGroup;
+			children = (
+				0453411520DCCBEA00859E23 /* HelloMessagekitFamework */,
+				0453411420DCCBEA00859E23 /* Products */,
+				A674F5CE9B3D6AFEAC12568F /* Pods */,
+				BFFAEBC864D00353E6BB6023 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0453411420DCCBEA00859E23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0453411320DCCBEA00859E23 /* HelloMessagekitFamework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0453411520DCCBEA00859E23 /* HelloMessagekitFamework */ = {
+			isa = PBXGroup;
+			children = (
+				0453411620DCCBEA00859E23 /* AppDelegate.swift */,
+				0453411820DCCBEA00859E23 /* ChatMessageViewController.swift */,
+				04735A3720DCDE7B0024693A /* ChatMessageViewcontroller+Extension.swift */,
+				0453411A20DCCBEA00859E23 /* Main.storyboard */,
+				0453412A20DCCFB600859E23 /* Message.swift */,
+				04735A3B20DCF5640024693A /* DateExtension.swift */,
+				04735A3920DCEB550024693A /* avatar.jpg */,
+				049FE81D20E09D2F00AD1686 /* sakura.jpg */,
+				0453411D20DCCBEB00859E23 /* Assets.xcassets */,
+				0453411F20DCCBEB00859E23 /* LaunchScreen.storyboard */,
+				0453412220DCCBEB00859E23 /* Info.plist */,
+			);
+			path = HelloMessagekitFamework;
+			sourceTree = "<group>";
+		};
+		A674F5CE9B3D6AFEAC12568F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DA10A52FD66523A0725688F /* Pods-HelloMessagekitFamework.debug.xcconfig */,
+				839186EA2B18EC8FAA0277C3 /* Pods-HelloMessagekitFamework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFFAEBC864D00353E6BB6023 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0453412820DCCD0800859E23 /* MessageKit.framework */,
+				3942C9F7FAC86408A8989AAD /* Pods_HelloMessagekitFamework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0453411220DCCBEA00859E23 /* HelloMessagekitFamework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0453412520DCCBEB00859E23 /* Build configuration list for PBXNativeTarget "HelloMessagekitFamework" */;
+			buildPhases = (
+				29D9DD8E9CDC9DF56AC1DA41 /* [CP] Check Pods Manifest.lock */,
+				0453410F20DCCBEA00859E23 /* Sources */,
+				0453411020DCCBEA00859E23 /* Frameworks */,
+				0453411120DCCBEA00859E23 /* Resources */,
+				12F291DAC2655B5C5395AF74 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloMessagekitFamework;
+			productName = HelloMessagekitFamework;
+			productReference = 0453411320DCCBEA00859E23 /* HelloMessagekitFamework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0453410B20DCCBE900859E23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Uran;
+				TargetAttributes = {
+					0453411220DCCBEA00859E23 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 0453410E20DCCBE900859E23 /* Build configuration list for PBXProject "HelloMessagekitFamework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0453410A20DCCBE900859E23;
+			productRefGroup = 0453411420DCCBEA00859E23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0453411220DCCBEA00859E23 /* HelloMessagekitFamework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0453411120DCCBEA00859E23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04735A3A20DCEB550024693A /* avatar.jpg in Resources */,
+				0453412120DCCBEB00859E23 /* LaunchScreen.storyboard in Resources */,
+				0453411E20DCCBEB00859E23 /* Assets.xcassets in Resources */,
+				0453411C20DCCBEA00859E23 /* Main.storyboard in Resources */,
+				049FE81E20E09D2F00AD1686 /* sakura.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12F291DAC2655B5C5395AF74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloMessagekitFamework/Pods-HelloMessagekitFamework-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloMessagekitFamework/Pods-HelloMessagekitFamework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29D9DD8E9CDC9DF56AC1DA41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloMessagekitFamework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0453410F20DCCBEA00859E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04735A3820DCDE7B0024693A /* ChatMessageViewcontroller+Extension.swift in Sources */,
+				04735A3C20DCF5640024693A /* DateExtension.swift in Sources */,
+				0453412B20DCCFB600859E23 /* Message.swift in Sources */,
+				0453411920DCCBEA00859E23 /* ChatMessageViewController.swift in Sources */,
+				0453411720DCCBEA00859E23 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0453411A20DCCBEA00859E23 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0453411B20DCCBEA00859E23 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0453411F20DCCBEB00859E23 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0453412020DCCBEB00859E23 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0453412320DCCBEB00859E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0453412420DCCBEB00859E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0453412620DCCBEB00859E23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA10A52FD66523A0725688F /* Pods-HelloMessagekitFamework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloMessagekitFamework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloMessagekitFamework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0453412720DCCBEB00859E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839186EA2B18EC8FAA0277C3 /* Pods-HelloMessagekitFamework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloMessagekitFamework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloMessagekitFamework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0453410E20DCCBE900859E23 /* Build configuration list for PBXProject "HelloMessagekitFamework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0453412320DCCBEB00859E23 /* Debug */,
+				0453412420DCCBEB00859E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0453412520DCCBEB00859E23 /* Build configuration list for PBXNativeTarget "HelloMessagekitFamework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0453412620DCCBEB00859E23 /* Debug */,
+				0453412720DCCBEB00859E23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0453410B20DCCBE900859E23 /* Project object */;
+}

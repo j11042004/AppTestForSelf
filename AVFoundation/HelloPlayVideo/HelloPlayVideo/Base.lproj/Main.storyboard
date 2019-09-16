@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloPlayVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9n-In-6O6">
+                                <rect key="frame" x="20" y="40" width="335" height="120"/>
+                                <color key="backgroundColor" red="0.99872421970000003" green="1" blue="0.1036133046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b9D-Tl-nkM">
+                                <rect key="frame" x="20" y="40" width="335" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="psQ-Yf-Rhs">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czl-KZ-pab">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="33.5"/>
+                                                <state key="normal" title="播放下載影片"/>
+                                                <connections>
+                                                    <action selector="playDownloadVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayN-OZ-cwW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-MN-VSY">
+                                                <rect key="frame" x="172.5" y="0.0" width="162.5" height="33.5"/>
+                                                <state key="normal" title="取的縮圖"/>
+                                                <connections>
+                                                    <action selector="getVideoThumbnail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uey-yF-lj9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Czl-KZ-pab" firstAttribute="leading" secondItem="psQ-Yf-Rhs" secondAttribute="leading" id="62q-s0-2KA"/>
+                                            <constraint firstItem="Czl-KZ-pab" firstAttribute="leading" secondItem="psQ-Yf-Rhs" secondAttribute="leading" id="FdJ-Fg-GFb"/>
+                                            <constraint firstItem="VOO-MN-VSY" firstAttribute="top" secondItem="psQ-Yf-Rhs" secondAttribute="top" id="LWp-hC-nrJ"/>
+                                            <constraint firstItem="Czl-KZ-pab" firstAttribute="top" secondItem="psQ-Yf-Rhs" secondAttribute="top" id="Vt3-s6-YUx"/>
+                                            <constraint firstAttribute="trailing" secondItem="VOO-MN-VSY" secondAttribute="trailing" id="XNC-Va-AnA"/>
+                                            <constraint firstAttribute="bottom" secondItem="Czl-KZ-pab" secondAttribute="bottom" id="ZlB-4P-7Es"/>
+                                            <constraint firstAttribute="bottom" secondItem="VOO-MN-VSY" secondAttribute="bottom" id="ay4-ZJ-U3P"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SJn-Tm-lbc">
+                                        <rect key="frame" x="0.0" y="43.5" width="335" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wm-yH-cG7">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="33"/>
+                                                <state key="normal" title="播放手機影片"/>
+                                                <connections>
+                                                    <action selector="playLocalVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rnl-02-QaZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="530-LE-vab">
+                                                <rect key="frame" x="172.5" y="0.0" width="162.5" height="33"/>
+                                                <state key="normal" title="重新播放"/>
+                                                <connections>
+                                                    <action selector="rePlayVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbV-cf-ghk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2Wm-yH-cG7" firstAttribute="leading" secondItem="SJn-Tm-lbc" secondAttribute="leading" id="08m-Zh-WTw"/>
+                                            <constraint firstAttribute="bottom" secondItem="530-LE-vab" secondAttribute="bottom" id="Aib-t8-QQo"/>
+                                            <constraint firstAttribute="trailing" secondItem="530-LE-vab" secondAttribute="trailing" id="IwD-2y-kTN"/>
+                                            <constraint firstItem="530-LE-vab" firstAttribute="top" secondItem="SJn-Tm-lbc" secondAttribute="top" id="K4j-Xc-Xrx"/>
+                                            <constraint firstItem="530-LE-vab" firstAttribute="width" secondItem="2Wm-yH-cG7" secondAttribute="width" id="KNG-Bi-oWt"/>
+                                            <constraint firstItem="2Wm-yH-cG7" firstAttribute="top" secondItem="SJn-Tm-lbc" secondAttribute="top" id="al5-IE-4i4"/>
+                                            <constraint firstAttribute="bottom" secondItem="2Wm-yH-cG7" secondAttribute="bottom" id="lyZ-Lo-fOm"/>
+                                            <constraint firstItem="2Wm-yH-cG7" firstAttribute="leading" secondItem="SJn-Tm-lbc" secondAttribute="leading" id="voL-Y9-zas"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p48-KL-G9l">
+                                        <rect key="frame" x="0.0" y="86.5" width="335" height="33.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtI-Xw-dis">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="33.5"/>
+                                                <state key="normal" title="播放下載的音樂"/>
+                                                <connections>
+                                                    <action selector="playDownloadSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LH6-UK-NAW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu7-Xz-WZi">
+                                                <rect key="frame" x="172.5" y="0.0" width="162.5" height="33.5"/>
+                                                <state key="normal" title="暫停"/>
+                                                <connections>
+                                                    <action selector="pauseVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXT-N6-Zij"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gtI-Xw-dis" firstAttribute="top" secondItem="p48-KL-G9l" secondAttribute="top" id="21Q-6N-a2P"/>
+                                            <constraint firstItem="gtI-Xw-dis" firstAttribute="leading" secondItem="p48-KL-G9l" secondAttribute="leading" id="XnP-YK-4uq"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vu7-Xz-WZi" secondAttribute="bottom" id="YdZ-Cs-hew"/>
+                                            <constraint firstItem="gtI-Xw-dis" firstAttribute="leading" secondItem="p48-KL-G9l" secondAttribute="leading" id="cOa-fO-LL1"/>
+                                            <constraint firstItem="Vu7-Xz-WZi" firstAttribute="top" secondItem="p48-KL-G9l" secondAttribute="top" id="gWj-XD-TuV"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vu7-Xz-WZi" secondAttribute="trailing" id="jNH-av-qkq"/>
+                                            <constraint firstAttribute="bottom" secondItem="gtI-Xw-dis" secondAttribute="bottom" id="wda-5l-Ha0"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2Wm-yH-cG7" firstAttribute="height" secondItem="gtI-Xw-dis" secondAttribute="height" id="211-Cu-SCU"/>
+                                    <constraint firstItem="2Wm-yH-cG7" firstAttribute="width" secondItem="Czl-KZ-pab" secondAttribute="width" id="AN4-zk-UGb"/>
+                                    <constraint firstAttribute="trailing" secondItem="SJn-Tm-lbc" secondAttribute="trailing" id="Ax9-cr-XzQ"/>
+                                    <constraint firstItem="530-LE-vab" firstAttribute="width" secondItem="VOO-MN-VSY" secondAttribute="width" id="CuK-ch-LUV"/>
+                                    <constraint firstAttribute="trailing" secondItem="p48-KL-G9l" secondAttribute="trailing" id="DZv-xa-BG3"/>
+                                    <constraint firstItem="2Wm-yH-cG7" firstAttribute="width" secondItem="gtI-Xw-dis" secondAttribute="width" id="WpN-qT-L4R"/>
+                                    <constraint firstItem="Czl-KZ-pab" firstAttribute="height" secondItem="2Wm-yH-cG7" secondAttribute="height" id="YLD-5B-HYY"/>
+                                    <constraint firstItem="530-LE-vab" firstAttribute="width" secondItem="Vu7-Xz-WZi" secondAttribute="width" id="dIV-oV-6nG"/>
+                                    <constraint firstItem="p48-KL-G9l" firstAttribute="leading" secondItem="b9D-Tl-nkM" secondAttribute="leading" id="dT7-HV-hwh"/>
+                                    <constraint firstItem="psQ-Yf-Rhs" firstAttribute="top" secondItem="b9D-Tl-nkM" secondAttribute="top" id="fqE-bq-j4j"/>
+                                    <constraint firstAttribute="bottom" secondItem="p48-KL-G9l" secondAttribute="bottom" id="hLw-VH-Veg"/>
+                                    <constraint firstItem="psQ-Yf-Rhs" firstAttribute="leading" secondItem="b9D-Tl-nkM" secondAttribute="leading" id="jeU-Ng-NG1"/>
+                                    <constraint firstItem="SJn-Tm-lbc" firstAttribute="leading" secondItem="b9D-Tl-nkM" secondAttribute="leading" id="jp6-Zd-QAn"/>
+                                    <constraint firstAttribute="height" constant="120" id="qud-Yf-XsJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="psQ-Yf-Rhs" secondAttribute="trailing" id="xRj-Tm-KxT"/>
+                                </constraints>
+                            </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="P6B-2q-GU5">
+                                <rect key="frame" x="18" y="180" width="339" height="31"/>
+                                <connections>
+                                    <action selector="selectTimeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0bY-cJ-NSg"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sKP-39-1Wx">
+                                <rect key="frame" x="20" y="230" width="335" height="417"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P6B-2q-GU5" secondAttribute="trailing" constant="20" id="Bcw-2m-clX"/>
+                            <constraint firstItem="y9n-In-6O6" firstAttribute="height" secondItem="b9D-Tl-nkM" secondAttribute="height" id="D4A-I8-TGC"/>
+                            <constraint firstItem="y9n-In-6O6" firstAttribute="centerY" secondItem="b9D-Tl-nkM" secondAttribute="centerY" id="Ebk-sn-FV3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sKP-39-1Wx" secondAttribute="trailing" constant="20" id="OUQ-HV-WE9"/>
+                            <constraint firstItem="P6B-2q-GU5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QDO-tk-qdy"/>
+                            <constraint firstItem="b9D-Tl-nkM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QmE-WN-zG3"/>
+                            <constraint firstItem="sKP-39-1Wx" firstAttribute="top" secondItem="P6B-2q-GU5" secondAttribute="bottom" constant="20" id="cta-8s-p57"/>
+                            <constraint firstItem="P6B-2q-GU5" firstAttribute="top" secondItem="y9n-In-6O6" secondAttribute="bottom" constant="20" id="eyP-b8-8dw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sKP-39-1Wx" secondAttribute="bottom" constant="20" id="i5H-PX-KTS"/>
+                            <constraint firstItem="y9n-In-6O6" firstAttribute="centerX" secondItem="b9D-Tl-nkM" secondAttribute="centerX" id="pLe-vN-vt0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b9D-Tl-nkM" secondAttribute="trailing" constant="20" id="pfq-Qf-w9T"/>
+                            <constraint firstItem="b9D-Tl-nkM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qBz-92-1A4"/>
+                            <constraint firstItem="sKP-39-1Wx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tlT-Fd-swQ"/>
+                            <constraint firstItem="y9n-In-6O6" firstAttribute="width" secondItem="b9D-Tl-nkM" secondAttribute="width" id="xWV-rq-a4L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="mUO-KG-1SF"/>
+                    <connections>
+                        <outlet property="resultImageView" destination="sKP-39-1Wx" id="YDe-Ea-6jr"/>
+                        <outlet property="timeSlider" destination="P6B-2q-GU5" id="M9M-yW-MLb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="39.130434782608695"/>
+        </scene>
+    </scenes>
+</document>

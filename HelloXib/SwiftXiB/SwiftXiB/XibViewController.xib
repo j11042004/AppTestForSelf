@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XibViewController" customModule="SwiftXiB" customModuleProvider="target">
+            <connections>
+                <outlet property="showView" destination="bQd-jU-vyt" id="WHq-gr-7dT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-jU-vyt" customClass="HelloView" customModule="SwiftXiB" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                    <color key="backgroundColor" red="1" green="0.25430009484684457" blue="0.33717300968300468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="700" id="Urb-Pu-v8U"/>
+                        <constraint firstAttribute="width" secondItem="bQd-jU-vyt" secondAttribute="height" id="aZE-XS-Zdr"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Urb-Pu-v8U"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Urb-Pu-v8U"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bQd-jU-vyt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VeU-3C-E71"/>
+                <constraint firstItem="bQd-jU-vyt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xhm-di-dYE"/>
+                <constraint firstItem="bQd-jU-vyt" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="cTl-EN-HoP"/>
+                <constraint firstItem="bQd-jU-vyt" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ynb-sB-Zqq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="cTl-EN-HoP"/>
+                    <exclude reference="ynb-sB-Zqq"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="cTl-EN-HoP"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="constraints">
+                    <include reference="cTl-EN-HoP"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="ynb-sB-Zqq"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

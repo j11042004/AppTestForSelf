@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WmJ-cf-XFY">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HellowQRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-wD-maO">
+                                <rect key="frame" x="44" y="44" width="596.5" height="349"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmu-b6-2Wh">
+                                <rect key="frame" x="640.5" y="44" width="255.5" height="349"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GP9-wD-maO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0gA-bs-HbH"/>
+                            <constraint firstItem="wmu-b6-2Wh" firstAttribute="leading" secondItem="GP9-wD-maO" secondAttribute="trailing" id="7rH-o7-zmN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wmu-b6-2Wh" secondAttribute="bottom" id="DQd-oD-ZRr"/>
+                            <constraint firstItem="wmu-b6-2Wh" firstAttribute="width" secondItem="GP9-wD-maO" secondAttribute="width" multiplier="3:7" id="RNL-XZ-AFP"/>
+                            <constraint firstItem="GP9-wD-maO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S0A-Dg-J5n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GP9-wD-maO" secondAttribute="bottom" id="mZF-Oe-m4F"/>
+                            <constraint firstItem="wmu-b6-2Wh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uLi-MN-sfo"/>
+                            <constraint firstAttribute="trailing" secondItem="wmu-b6-2Wh" secondAttribute="trailing" id="v9v-xK-mm7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LPo-h7-kTI">
+                        <barButtonItem key="leftBarButtonItem" title="decode" id="YAX-uC-G4I">
+                            <connections>
+                                <action selector="decodeImage:" destination="BYZ-38-t0r" id="t4I-FI-TDa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Change" id="mpE-3n-1xu">
+                            <connections>
+                                <action selector="changeImage:" destination="BYZ-38-t0r" id="LN8-tU-pUb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="GP9-wD-maO" id="KPS-wq-DvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.3214285714284" y="137.68115942028987"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ACC-oM-ZUX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WmJ-cf-XFY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UoE-Lq-VD4">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oxa-cQ-1OK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5R-Yq-QCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="783.48214285714278"/>
+        </scene>
+    </scenes>
+</document>

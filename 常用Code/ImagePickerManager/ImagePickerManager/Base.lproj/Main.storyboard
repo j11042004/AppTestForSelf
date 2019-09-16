@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImagePickerManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptx-OZ-ocP">
+                                <rect key="frame" x="0.0" y="161" width="414" height="414"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WbU-e5-g1H">
+                                        <rect key="frame" x="41.333333333333343" y="19.999999999999986" width="331.33333333333326" height="220.66666666666663"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WbU-e5-g1H" secondAttribute="height" multiplier="3:2" id="BcL-kP-Ztd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="maQ-aS-hYV">
+                                        <rect key="frame" x="20" y="301" width="374" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAZ-JV-k9e">
+                                                <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="54"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="10" minY="3" maxX="0.0" maxY="3"/>
+                                                <state key="normal" title="相機" image="sakura">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cameraGetImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1m-X4-Ngg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-ND-neB">
+                                                <rect key="frame" x="189.66666666666663" y="0.0" width="184.33333333333337" height="54"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="相簿">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="photoLibGetImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgK-Qz-Xfg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GaZ-ND-neB" firstAttribute="width" secondItem="PAZ-JV-k9e" secondAttribute="width" id="ebh-Rl-4yf"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="maQ-aS-hYV" firstAttribute="leading" secondItem="ptx-OZ-ocP" secondAttribute="leading" constant="20" id="G0e-7z-BJc"/>
+                                    <constraint firstItem="WbU-e5-g1H" firstAttribute="centerX" secondItem="ptx-OZ-ocP" secondAttribute="centerX" id="I0e-4a-awU"/>
+                                    <constraint firstItem="WbU-e5-g1H" firstAttribute="top" secondItem="ptx-OZ-ocP" secondAttribute="top" constant="20" id="RLz-qU-HRY"/>
+                                    <constraint firstAttribute="trailing" secondItem="maQ-aS-hYV" secondAttribute="trailing" constant="20" id="Y5t-oe-99Z"/>
+                                    <constraint firstAttribute="width" secondItem="ptx-OZ-ocP" secondAttribute="height" id="oWx-2I-Ig6"/>
+                                    <constraint firstItem="WbU-e5-g1H" firstAttribute="width" secondItem="ptx-OZ-ocP" secondAttribute="width" multiplier="0.8" id="oix-2U-5vi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-HK-B8s">
+                                <rect key="frame" x="186.33333333333334" y="421.66666666666669" width="41.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gg3-HK-B8s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1t3-xl-qZE"/>
+                            <constraint firstItem="ptx-OZ-ocP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="CRX-iW-2iz"/>
+                            <constraint firstItem="gg3-HK-B8s" firstAttribute="top" secondItem="WbU-e5-g1H" secondAttribute="bottom" constant="20" id="KK5-mN-kxF"/>
+                            <constraint firstItem="ptx-OZ-ocP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="M83-h8-1zn"/>
+                            <constraint firstItem="gg3-HK-B8s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mag-lX-9me"/>
+                            <constraint firstItem="ptx-OZ-ocP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aZA-um-5kR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gg3-HK-B8s" secondAttribute="trailing" constant="20" id="br4-xG-WWm"/>
+                            <constraint firstItem="ptx-OZ-ocP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rG3-WY-OXB"/>
+                            <constraint firstItem="maQ-aS-hYV" firstAttribute="top" secondItem="gg3-HK-B8s" secondAttribute="bottom" constant="20" id="sQD-XL-YLd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CRX-iW-2iz"/>
+                                <exclude reference="M83-h8-1zn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="M83-h8-1zn"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="CRX-iW-2iz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="FhD-xl-1Uk"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="gg3-HK-B8s" id="Uk8-RF-54v"/>
+                        <outlet property="showImageView" destination="WbU-e5-g1H" id="aby-bL-oQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="33.423913043478265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sakura" width="86" height="54"/>
+    </resources>
+</document>

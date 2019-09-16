@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloGif" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eKo-FW-1Mj">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="148" id="yUf-SB-i4u" customClass="GifCell" customModule="HelloGif" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="148"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yUf-SB-i4u" id="2NR-2t-ih4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="147.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jbf-t2-jj3">
+                                                    <rect key="frame" x="123.33333333333331" y="10.000000000000007" width="127.66666666666669" height="127.66666666666669"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="jbf-t2-jj3" secondAttribute="height" id="HV1-7Z-dif"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="jbf-t2-jj3" secondAttribute="bottom" constant="10" id="9Xj-SB-6hh"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jbf-t2-jj3" secondAttribute="trailing" constant="10" id="FxK-46-o9g"/>
+                                                <constraint firstItem="jbf-t2-jj3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2NR-2t-ih4" secondAttribute="leading" constant="10" id="rP7-sk-ViN"/>
+                                                <constraint firstItem="jbf-t2-jj3" firstAttribute="centerX" secondItem="2NR-2t-ih4" secondAttribute="centerX" id="sST-jw-0pf"/>
+                                                <constraint firstItem="jbf-t2-jj3" firstAttribute="top" secondItem="2NR-2t-ih4" secondAttribute="top" constant="10" id="vCz-Rs-10S"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="gifImageView" destination="jbf-t2-jj3" id="vDW-CY-Bco"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Fzm-A0-aE5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Vas-pl-65B"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eKo-FW-1Mj" secondAttribute="trailing" id="Gdm-mw-WRA"/>
+                            <constraint firstItem="eKo-FW-1Mj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cFM-D6-eue"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eKo-FW-1Mj" secondAttribute="bottom" id="m0h-QW-2Zn"/>
+                            <constraint firstItem="eKo-FW-1Mj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xjY-w6-SFP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="86.453201970443359"/>
+        </scene>
+    </scenes>
+</document>

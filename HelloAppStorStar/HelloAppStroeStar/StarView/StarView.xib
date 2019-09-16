@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StarView" customModule="HelloAppStroeStar" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvF-za-iwH">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="154"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="gxm-y5-cP4"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GJJ-2n-5Ls">
+                    <rect key="frame" x="110" y="0.0" width="154" height="154"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GJJ-2n-5Ls" secondAttribute="height" id="V8x-DZ-AIe"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94447592917915402" green="1" blue="0.1935447800271024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="hvF-za-iwH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2i3-oq-k0c"/>
+                <constraint firstItem="hvF-za-iwH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4sC-ru-pSb"/>
+                <constraint firstItem="GJJ-2n-5Ls" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Gk5-3g-hYX"/>
+                <constraint firstItem="GJJ-2n-5Ls" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UvN-Yh-cC7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hvF-za-iwH" secondAttribute="bottom" id="g0R-sv-urU"/>
+                <constraint firstItem="GJJ-2n-5Ls" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="m5r-Yd-aYA"/>
+                <constraint firstItem="GJJ-2n-5Ls" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="uiu-Py-zRB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="407"/>
+        </view>
+    </objects>
+</document>

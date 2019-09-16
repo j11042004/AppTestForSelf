@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041E06CF20454FEB00760FBF /* AlertController+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E06CE20454FEB00760FBF /* AlertController+Image.swift */; };
+		041E06D12045556200760FBF /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E06D02045556200760FBF /* UIImage+Resize.swift */; };
+		045A7C8420400C17007EC0B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7C8320400C17007EC0B8 /* AppDelegate.swift */; };
+		045A7C8620400C17007EC0B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A7C8520400C17007EC0B8 /* ViewController.swift */; };
+		045A7C8920400C17007EC0B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A7C8720400C17007EC0B8 /* Main.storyboard */; };
+		045A7C8B20400C17007EC0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045A7C8A20400C17007EC0B8 /* Assets.xcassets */; };
+		045A7C8E20400C17007EC0B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A7C8C20400C17007EC0B8 /* LaunchScreen.storyboard */; };
+		045A7C9A20401323007EC0B8 /* firstdb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 045A7C9920401323007EC0B8 /* firstdb.sqlite */; };
+		045A7C9B20401329007EC0B8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 045A7C9620400C39007EC0B8 /* libsqlite3.tbd */; };
+		04F0E3B12043AC0C0070F1D0 /* SqlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0E3B02043AC0C0070F1D0 /* SqlManager.swift */; };
+		04F0E3B52043DA0D0070F1D0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0E3B42043DA0D0070F1D0 /* DetailViewController.swift */; };
+		04F0E3B72043F6860070F1D0 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0E3B62043F6860070F1D0 /* ImagePickerManager.swift */; };
+		04F0E3B9204404080070F1D0 /* RootVCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0E3B8204404080070F1D0 /* RootVCManager.swift */; };
+		04F0E3BB2044FBFC0070F1D0 /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F0E3BA2044FBFC0070F1D0 /* noImage.png */; };
+		04F0E3C8204513F20070F1D0 /* ShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F0E3C6204513F20070F1D0 /* ShowTableViewCell.swift */; };
+		04F0E3C9204513F20070F1D0 /* ShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F0E3C7204513F20070F1D0 /* ShowTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		041E06CE20454FEB00760FBF /* AlertController+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertController+Image.swift"; sourceTree = "<group>"; };
+		041E06D02045556200760FBF /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		045A7C8020400C17007EC0B8 /* HelloSqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045A7C8320400C17007EC0B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		045A7C8520400C17007EC0B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		045A7C8820400C17007EC0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045A7C8A20400C17007EC0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045A7C8D20400C17007EC0B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		045A7C8F20400C17007EC0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045A7C9620400C39007EC0B8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		045A7C9920401323007EC0B8 /* firstdb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = firstdb.sqlite; sourceTree = SOURCE_ROOT; };
+		04F0E3B02043AC0C0070F1D0 /* SqlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlManager.swift; sourceTree = "<group>"; };
+		04F0E3B42043DA0D0070F1D0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04F0E3B62043F6860070F1D0 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		04F0E3B8204404080070F1D0 /* RootVCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVCManager.swift; sourceTree = "<group>"; };
+		04F0E3BA2044FBFC0070F1D0 /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
+		04F0E3C6204513F20070F1D0 /* ShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTableViewCell.swift; sourceTree = "<group>"; };
+		04F0E3C7204513F20070F1D0 /* ShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045A7C7D20400C17007EC0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045A7C9B20401329007EC0B8 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041E06C5204535CD00760FBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				045A7C8720400C17007EC0B8 /* Main.storyboard */,
+				04F0E3C6204513F20070F1D0 /* ShowTableViewCell.swift */,
+				04F0E3C7204513F20070F1D0 /* ShowTableViewCell.xib */,
+				041E06D02045556200760FBF /* UIImage+Resize.swift */,
+				041E06CE20454FEB00760FBF /* AlertController+Image.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		045A7C7720400C17007EC0B8 = {
+			isa = PBXGroup;
+			children = (
+				045A7C8220400C17007EC0B8 /* HelloSqlite */,
+				045A7C8120400C17007EC0B8 /* Products */,
+				045A7C9520400C39007EC0B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		045A7C8120400C17007EC0B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045A7C8020400C17007EC0B8 /* HelloSqlite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045A7C8220400C17007EC0B8 /* HelloSqlite */ = {
+			isa = PBXGroup;
+			children = (
+				045A7C8320400C17007EC0B8 /* AppDelegate.swift */,
+				041E06C5204535CD00760FBF /* View */,
+				04F0E3BD204507230070F1D0 /* ViewController */,
+				04F0E3BC204505FD0070F1D0 /* Model */,
+				045A7C8A20400C17007EC0B8 /* Assets.xcassets */,
+				045A7C8C20400C17007EC0B8 /* LaunchScreen.storyboard */,
+				04F0E3BA2044FBFC0070F1D0 /* noImage.png */,
+				045A7C8F20400C17007EC0B8 /* Info.plist */,
+				045A7C9920401323007EC0B8 /* firstdb.sqlite */,
+			);
+			path = HelloSqlite;
+			sourceTree = "<group>";
+		};
+		045A7C9520400C39007EC0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045A7C9620400C39007EC0B8 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04F0E3BC204505FD0070F1D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04F0E3B02043AC0C0070F1D0 /* SqlManager.swift */,
+				04F0E3B62043F6860070F1D0 /* ImagePickerManager.swift */,
+				04F0E3B8204404080070F1D0 /* RootVCManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04F0E3BD204507230070F1D0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				045A7C8520400C17007EC0B8 /* ViewController.swift */,
+				04F0E3B42043DA0D0070F1D0 /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045A7C7F20400C17007EC0B8 /* HelloSqlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045A7C9220400C17007EC0B8 /* Build configuration list for PBXNativeTarget "HelloSqlite" */;
+			buildPhases = (
+				045A7C7C20400C17007EC0B8 /* Sources */,
+				045A7C7D20400C17007EC0B8 /* Frameworks */,
+				045A7C7E20400C17007EC0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloSqlite;
+			productName = HelloSqlite;
+			productReference = 045A7C8020400C17007EC0B8 /* HelloSqlite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045A7C7820400C17007EC0B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Uran;
+				TargetAttributes = {
+					045A7C7F20400C17007EC0B8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 045A7C7B20400C17007EC0B8 /* Build configuration list for PBXProject "HelloSqlite" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045A7C7720400C17007EC0B8;
+			productRefGroup = 045A7C8120400C17007EC0B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045A7C7F20400C17007EC0B8 /* HelloSqlite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045A7C7E20400C17007EC0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F0E3C9204513F20070F1D0 /* ShowTableViewCell.xib in Resources */,
+				045A7C9A20401323007EC0B8 /* firstdb.sqlite in Resources */,
+				045A7C8E20400C17007EC0B8 /* LaunchScreen.storyboard in Resources */,
+				04F0E3BB2044FBFC0070F1D0 /* noImage.png in Resources */,
+				045A7C8B20400C17007EC0B8 /* Assets.xcassets in Resources */,
+				045A7C8920400C17007EC0B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045A7C7C20400C17007EC0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041E06CF20454FEB00760FBF /* AlertController+Image.swift in Sources */,
+				04F0E3B12043AC0C0070F1D0 /* SqlManager.swift in Sources */,
+				04F0E3B72043F6860070F1D0 /* ImagePickerManager.swift in Sources */,
+				04F0E3C8204513F20070F1D0 /* ShowTableViewCell.swift in Sources */,
+				04F0E3B9204404080070F1D0 /* RootVCManager.swift in Sources */,
+				041E06D12045556200760FBF /* UIImage+Resize.swift in Sources */,
+				045A7C8620400C17007EC0B8 /* ViewController.swift in Sources */,
+				045A7C8420400C17007EC0B8 /* AppDelegate.swift in Sources */,
+				04F0E3B52043DA0D0070F1D0 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		045A7C8720400C17007EC0B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045A7C8820400C17007EC0B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		045A7C8C20400C17007EC0B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045A7C8D20400C17007EC0B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045A7C9020400C17007EC0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		045A7C9120400C17007EC0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045A7C9320400C17007EC0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloSqlite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloSqlite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045A7C9420400C17007EC0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloSqlite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloSqlite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045A7C7B20400C17007EC0B8 /* Build configuration list for PBXProject "HelloSqlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045A7C9020400C17007EC0B8 /* Debug */,
+				045A7C9120400C17007EC0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045A7C9220400C17007EC0B8 /* Build configuration list for PBXNativeTarget "HelloSqlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045A7C9320400C17007EC0B8 /* Debug */,
+				045A7C9420400C17007EC0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045A7C7820400C17007EC0B8 /* Project object */;
+}

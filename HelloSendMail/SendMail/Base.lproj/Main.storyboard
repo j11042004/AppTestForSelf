@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SendMail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-0q-my8">
+                                <rect key="frame" x="146" y="288.5" width="83" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-F9-RRE">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="30"/>
+                                        <state key="normal" title="Send Mail"/>
+                                        <connections>
+                                            <action selector="sendMailBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPD-Qb-k5g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3h-rZ-7XV">
+                                        <rect key="frame" x="0.0" y="60" width="83" height="30"/>
+                                        <state key="normal" title="Share Other"/>
+                                        <connections>
+                                            <action selector="shareOther:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiD-Sc-BpS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5ch-F9-RRE" secondAttribute="trailing" id="AHc-Ea-yne"/>
+                                    <constraint firstItem="5ch-F9-RRE" firstAttribute="leading" secondItem="qSa-0q-my8" secondAttribute="leading" id="Obf-QK-9gO"/>
+                                    <constraint firstItem="5ch-F9-RRE" firstAttribute="top" secondItem="qSa-0q-my8" secondAttribute="top" id="aNo-qZ-LFd"/>
+                                    <constraint firstAttribute="bottom" secondItem="n3h-rZ-7XV" secondAttribute="bottom" id="fW8-oD-SZM"/>
+                                    <constraint firstAttribute="trailing" secondItem="n3h-rZ-7XV" secondAttribute="trailing" id="pwO-2I-ybQ"/>
+                                    <constraint firstItem="n3h-rZ-7XV" firstAttribute="leading" secondItem="qSa-0q-my8" secondAttribute="leading" id="uLl-ft-vVJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qSa-0q-my8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AvO-xp-8z1"/>
+                            <constraint firstItem="qSa-0q-my8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ycd-zU-CDl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

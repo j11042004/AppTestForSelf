@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>iOS and Js</title>
+        <style type="text/css">
+            * {
+                font-size: 40px;
+            }
+            </style>
+    </head>
+    
+    <body>
+        <div style="margin-top: 100px ; background-color: rgb(120, 120, 120);">
+            <h1>Test how to use objective-c call js</h1><br/>
+            
+            <!--    Alert Button    -->
+            <div><input type="button" value="call js alert" onclick="callJsAlert()"></div><br/>
+            
+            <!--    Confirm Alert Button    -->
+            <div><input type="button" value="Call js confirm" onclick="callJsConfirm()"></div><br/>
+            <!--    Prompt Alert Button    -->
+            <div><input type="button" value="Call Js prompt " onclick="callJsInput()"></div><br/>
+            <!--  這的 show alert 方法在 Xcode 那實作  -->
+            <div><input type="button" value="Swift inject js" onclick="showAlert()"></div><br/>
+            <div>Click me here: <a href="https://www.google.com.tw">Jump to Google</a></div>
+            
+            <!--      讓 Xcode 取得 Value      -->
+            <div><input style="display:none;" name="showInput" value='I am Input' ></div><br/>
+            <div><input type="button" value="Js call Swift" onclick="jscallSwift()"></div><br/>
+        </div><br/>
+        
+        <div id="SwiftDiv">
+            <span id="jsParamFuncSpan" style="color: red; font-size: 50px;"></span>
+        </div>
+        
+        <script type="text/javascript">
+            function callJsAlert() {
+                alert('Objective-C call js to show alert');
+                document.getElementById('jsParamFuncSpan').innerHTML = 'Alert';
+                // 用註冊的 MessageHandle 回傳 Message
+                window.webkit.messageHandlers.AppModel.postMessage('alert');
+            }
+        
+        function callJsConfirm() {
+            if (confirm('confirm', 'Objective-C call js to show confirm')) {
+                document.getElementById('jsParamFuncSpan').innerHTML
+                = 'true';
+            } else {
+                document.getElementById('jsParamFuncSpan').innerHTML
+                = 'false';
+            }
+            
+            //用註冊的 MessageHandle 回傳 Message
+            window.webkit.messageHandlers.AppModel.postMessage('confirm');
+        }
+        
+        function callJsInput() {
+            var response = prompt('Hello', 'Please input your name:');
+            document.getElementById('jsParamFuncSpan').innerHTML = response;
+            
+            //用註冊的 MessageHandle 回傳 Message
+            window.webkit.messageHandlers.AppModel.postMessage(response);
+        }
+        function jscallSwift(){
+            
+        }
+        
+        
+        //注意哦，如果JS写错，可能在OC调用JS方法时，都会出错哦。
+        var jsParamFunc = function(argument) {
+            document.getElementById('jsParamFuncSpan').innerHTML
+            = argument['name'];
+        }
+        showAler();
+            </script>
+    </body>
+</html>
+

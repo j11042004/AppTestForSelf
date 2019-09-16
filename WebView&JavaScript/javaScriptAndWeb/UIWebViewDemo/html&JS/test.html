@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <!-- 用 css 修飾 -->
+            <!-- <link rel="stylesheet" href="main.css"> -->
+            <!-- 需要的 javascript 位置 -->
+            <!-- <script src="new.js"></script> -->
+            <title>Calaulator</title>
+            <body>
+                <form action="" id="theForm">
+                    <!-- 外框 -->
+                    <fieldset>
+                        <!-- 外框名稱 -->
+                        <legend>Calculator</legend>
+                        <div>
+                            <!-- 用laabel修飾 -->
+                            <label>Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="0">
+                                </div>
+                        <div>
+                            <!-- 用laabel修飾 -->
+                            <label>Price Per Unit:</label>
+                            <input type="text" id="price" name="price">
+                                </div>
+                        <div>
+                            <!-- 用laabel修飾 -->
+                            <label>Tax Rate(%):</label>
+                            <input type="text" id="tax" name="tax">
+                                </div>
+                        <div>
+                            <!-- 用laabel修飾 -->
+                            <label>DisCount:</label>
+                            <input type="text" id="discount" name="discount">
+                                </div>
+                        <div>
+                            <!-- 用laabel修飾 -->
+                            <label>Total:</label>
+                            <input type="text" id="total" name="total">
+                                </div>
+                        <div>
+                            <!-- 用laabel修飾 -->
+                            <label>Total2:</label>
+                            <input type="text" id="total2" name="total2">
+                                </div>
+                        
+                        <div>
+                            <button type="button" onclick="calculate()">Submit</button>
+                            <script>
+                                function calculate(){
+                                    var quantity = document.getElementById('quantity').value;
+                                    var price = document.getElementById('price').value;
+                                    var tax = document.getElementById('tax').value;
+                                    var discount = document.getElementById('discount').value;
+                                    
+                                    var total = quantity * price;
+                                    tax = tax/100 ;
+                                    tax ++ ;
+                                    total = total*tax;
+                                    total -=  discount ;
+                                    // 取小數後二位
+                                    total = total.toFixed(2);
+                                    // Swift or objective 的監聽字串（可自訂），會呼叫到 Swift的 func test3(_ value: String, _ num: Double) 這個方法
+                                    javaScriptCallToSwift.test3("test3", total)
+                                    document.getElementById('total').value = total;
+                                    //將算出的值顯示
+                                    // return false;
+                                }
+                            </script>
+                        </div>
+                    </fieldset>
+                </form>
+            </body>
+</html>
+<!--template.html-->
