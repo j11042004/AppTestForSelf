@@ -1,0 +1,37 @@
+PODS:
+  - GoogleAPIClientForREST/Core (1.3.8):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/YouTube (1.3.8):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GTMSessionFetcher (1.2.1):
+    - GTMSessionFetcher/Full (= 1.2.1)
+  - GTMSessionFetcher/Core (1.2.1)
+  - GTMSessionFetcher/Full (1.2.1):
+    - GTMSessionFetcher/Core (= 1.2.1)
+  - SDWebImage (5.0.2):
+    - SDWebImage/Core (= 5.0.2)
+  - SDWebImage/Core (5.0.2)
+  - XCDYouTubeKit (2.7.5)
+
+DEPENDENCIES:
+  - GoogleAPIClientForREST/YouTube
+  - SDWebImage
+  - XCDYouTubeKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GoogleAPIClientForREST
+    - GTMSessionFetcher
+    - SDWebImage
+    - XCDYouTubeKit
+
+SPEC CHECKSUMS:
+  GoogleAPIClientForREST: 5447a194eae517986cafe6421a5330b80b820591
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  XCDYouTubeKit: 2458e1c823167ff1da2f326e4a40bc701ca86593
+
+PODFILE CHECKSUM: 298a1fe493ec410ada097c77adacea9746fb8356
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "b527dd78a6317a906595838e40bad09a"
+build_time: [1528172053, 919334000]
+inputs:
+  "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Framework/SwiftFramework/SwiftFramework/SwiftHello.swift": [1520352316, 0]
+  "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Framework/SwiftFramework/SwiftFramework/SwiftFramework.swift": [1520352316, 0]

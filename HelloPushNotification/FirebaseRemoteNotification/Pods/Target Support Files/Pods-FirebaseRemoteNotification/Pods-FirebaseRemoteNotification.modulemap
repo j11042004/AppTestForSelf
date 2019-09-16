@@ -1,0 +1,6 @@
+framework module Pods_FirebaseRemoteNotification {
+  umbrella header "Pods-FirebaseRemoteNotification-umbrella.h"
+
+  export *
+  module * { export * }
+}

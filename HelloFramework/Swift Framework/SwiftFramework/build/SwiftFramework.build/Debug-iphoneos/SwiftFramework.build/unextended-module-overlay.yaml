@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/mac/Library/Developer/Xcode/DerivedData/SwiftFramework-bdzrfytnjeconudoewuqnreqojmw/Build/Products/Debug-iphoneos/SwiftFramework.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/mac/Desktop/App測試/HelloFramework/Swift Framework/SwiftFramework/build/SwiftFramework.build/Debug-iphoneos/SwiftFramework.build/unextended-module.modulemap',
+    }]
+  }]
+}

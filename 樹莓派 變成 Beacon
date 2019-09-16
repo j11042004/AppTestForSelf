@@ -1,0 +1,85 @@
+檢查 apt 套件庫中的 bluez 版本
+apt-cache show bluez
+
+
+安裝 編譯 bluez 的套件
+sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
+
+到 bluez 下載最新的版本
+http://www.kernel.org/pub/linux/bluetooth/
+ex :
+wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.43.tar.xz
+
+解壓縮 BlueZ 原始碼：
+
+tar Jxvf bluez-5.43.tar.xz
+cd bluez-5.43/
+
+
+
+
+查看藍牙狀態
+sudo hciconfig
+
+開啟藍芽
+sudo hciconfig hci0 up
+
+查看 hciconfig 支援的指令
+sudo hciconfig - help
+
+啟用藍牙的低耗能廣告（LE advertising）模式
+sudo hciconfig hci0 leadv 3
+
+啟動 BLE 訊息廣播功能
+sudo hciconfig hci0 leadv
+
+關閉掃描功能
+sudo hciconfig hci0 noscan
+
+開始發送訊號
+sudo hciconfig hci0 iscan
+
+
+
+
+這行指令就是重點中的重點了，開始發送 iBeacon 的資料封包。
+sudo hcitool -i 
+				hci0 
+					 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 
+					 												E2 C5 6D B5 DF FB 48 D2 B0 60 D0 F5 A7 10 96 E0 
+					 												00 00 
+					 												00 00 
+					 												C8 00
+
+BLE Device : hci0
+藍牙接收器的編號
+UUID : E2 C5 6D B5 DF FB 48 D2 B0 60 D0 F5 A7 10 96 E0
+通用唯一識別碼 (Universally Unique Identifier)，須自訂，用來讓對應的 iOS App 或 Android App 進行辨識，再進行後續處理程序。
+
+
+Major : 00 00 
+須自訂，用來辨識的自訂各個不同的 ibeacon，由 0000 到 FFFF。
+Minor : 00 00 
+須自訂，用來辨識的自訂特定場所，由 0000 到 FFFF。
+Measured Power : C8 00
+用來調整 iBeacon 發射端與接收端相距一公尺時的訊號強度。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+參考網址：
+	http://blog.itist.tw/2014/05/ibeacon.html
+	https://blog.gtwang.org/iot/raspberry-pi/diy-build-raspberry-pi-ibeacon-transmitter-tutorial/
+	https://github.com/jk195417/traffic-signs-control-system/wiki/Raspberry-Pi-:-使用藍芽-Dongle-與安裝-BlueZ
+
+	http://yehnan.blogspot.com/2014/02/raspberry-piraspbian.html

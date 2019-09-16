@@ -1,0 +1,6 @@
+framework module XibFrameWork {
+  umbrella header "XibFrameWork.h"
+
+  export *
+  module * { export * }
+}

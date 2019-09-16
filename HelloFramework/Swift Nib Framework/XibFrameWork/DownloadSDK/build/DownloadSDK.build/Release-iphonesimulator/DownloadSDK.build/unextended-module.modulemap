@@ -1,0 +1,10 @@
+framework module DownloadSDK {
+  umbrella header "DownloadSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module DownloadSDK.__Swift {
+    exclude header "DownloadSDK-Swift.h"
+}

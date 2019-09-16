@@ -1,0 +1,10 @@
+Objective-c use Swift
+
+Building Setting 設定
+ALWAYS EMBED SWIFT STANDARD LIBRARIES： Yes
+
+SWIFT OBJC BRIDGING HEADER： 設定建立的 Bridge.h 檔
+
+Generated Interface Header Name：尋找要引用的 .h 檔是什麼
+不是要 import 建立的 Bridge 檔
+

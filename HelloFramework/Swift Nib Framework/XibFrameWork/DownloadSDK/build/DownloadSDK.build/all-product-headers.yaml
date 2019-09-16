@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/mac/Library/Developer/Xcode/DerivedData/DownloadSDK-amexosvoypgiomdcvaweeewkyfoq/Build/Products/Release-iphonesimulator/DownloadSDK.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DownloadSDK-Swift.h",
+          'external-contents': "/Users/mac/Library/Developer/Xcode/DerivedData/DownloadSDK-amexosvoypgiomdcvaweeewkyfoq/Build/Products/Release-iphonesimulator/DownloadSDK.framework/Headers/DownloadSDK-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "DownloadSDK.h",
+          'external-contents': "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Nib Framework/XibFrameWork/DownloadSDK/DownloadSDK/DownloadSDK.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/mac/Library/Developer/Xcode/DerivedData/DownloadSDK-amexosvoypgiomdcvaweeewkyfoq/Build/Products/Release-iphonesimulator/DownloadSDK.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Nib Framework/XibFrameWork/DownloadSDK/build/DownloadSDK.build/Release-iphonesimulator/DownloadSDK.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

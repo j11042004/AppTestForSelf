@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadView" customModule="DownloadSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLabel" destination="PQe-Rk-5mL" id="aED-4P-lsf"/>
+                <outlet property="imageView" destination="dCb-lO-bbW" id="4rZ-Au-7IO"/>
+                <outlet property="subHeadlineLabel" destination="Bn9-yb-Wq9" id="vYc-jc-fty"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="6vd-yr-HNa">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p1m-0B-gbu">
+                <rect key="frame" x="0.0" y="0.0" width="234" height="263"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mp-fK-ojm">
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="263"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub HeadLine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn9-yb-Wq9">
+                                <rect key="frame" x="8" y="186" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-lO-bbW">
+                                <rect key="frame" x="52" y="10" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Xf7-Tj-XPe"/>
+                                    <constraint firstAttribute="height" constant="130" id="kJY-ba-Jcc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Head Line" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQe-Rk-5mL">
+                                <rect key="frame" x="8" y="160" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dCb-lO-bbW" firstAttribute="top" secondItem="5mp-fK-ojm" secondAttribute="top" constant="10" id="Dh3-n5-RgV"/>
+                            <constraint firstItem="Bn9-yb-Wq9" firstAttribute="leading" secondItem="5mp-fK-ojm" secondAttribute="leadingMargin" id="GgG-PR-WP8"/>
+                            <constraint firstItem="Bn9-yb-Wq9" firstAttribute="top" secondItem="PQe-Rk-5mL" secondAttribute="bottom" constant="5" id="JBu-jX-gBh"/>
+                            <constraint firstItem="PQe-Rk-5mL" firstAttribute="leading" secondItem="5mp-fK-ojm" secondAttribute="leadingMargin" id="Q1f-6u-s3e"/>
+                            <constraint firstItem="PQe-Rk-5mL" firstAttribute="top" secondItem="dCb-lO-bbW" secondAttribute="bottom" constant="20" id="Vbx-ug-ygJ"/>
+                            <constraint firstItem="dCb-lO-bbW" firstAttribute="centerX" secondItem="5mp-fK-ojm" secondAttribute="centerX" id="ZQa-I8-EPa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PQe-Rk-5mL" secondAttribute="trailing" id="pYR-z1-sxI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bn9-yb-Wq9" secondAttribute="trailing" id="x5D-gQ-g81"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5mp-fK-ojm" firstAttribute="top" secondItem="p1m-0B-gbu" secondAttribute="top" id="OEP-X3-RBc"/>
+                    <constraint firstAttribute="bottom" secondItem="5mp-fK-ojm" secondAttribute="bottom" id="acA-45-1h3"/>
+                    <constraint firstAttribute="trailing" secondItem="5mp-fK-ojm" secondAttribute="trailing" id="iZO-r4-XOr"/>
+                    <constraint firstItem="5mp-fK-ojm" firstAttribute="leading" secondItem="p1m-0B-gbu" secondAttribute="leading" id="oFm-Gn-f9K"/>
+                </constraints>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="-184" y="135.5"/>
+        </visualEffectView>
+    </objects>
+</document>

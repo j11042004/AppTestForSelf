@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NibView" customModule="SwiftXibExtension" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="usV-Ie-VUT">
+                    <rect key="frame" x="0.0" y="10" width="375" height="187.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="usV-Ie-VUT" secondAttribute="height" multiplier="2:1" id="RSd-90-q2m"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVy-3Q-hMk">
+                    <rect key="frame" x="10" y="207.5" width="355" height="116"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="usV-Ie-VUT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="77g-wF-3VV"/>
+                <constraint firstItem="YVy-3Q-hMk" firstAttribute="top" secondItem="usV-Ie-VUT" secondAttribute="bottom" constant="10" id="XV0-68-Ooq"/>
+                <constraint firstItem="YVy-3Q-hMk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="YG5-Wd-YXD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YVy-3Q-hMk" secondAttribute="bottom" constant="10" id="Zz2-6n-uRc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YVy-3Q-hMk" secondAttribute="trailing" constant="10" id="aGs-HK-zh5"/>
+                <constraint firstItem="usV-Ie-VUT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="tgT-NL-D55"/>
+                <constraint firstItem="usV-Ie-VUT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="xCP-SV-CkT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

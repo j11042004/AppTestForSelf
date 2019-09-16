@@ -1,0 +1,6 @@
+framework module Pods_HelloHaishinKitSwift {
+  umbrella header "Pods-HelloHaishinKitSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

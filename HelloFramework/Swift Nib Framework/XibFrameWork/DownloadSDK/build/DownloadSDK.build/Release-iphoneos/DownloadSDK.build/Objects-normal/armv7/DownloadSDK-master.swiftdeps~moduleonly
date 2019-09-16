@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "053f610e17dd395ee1a862afdf40eca6"
+build_time: [1557300613, 688243000]
+inputs:
+  "/Users/mac/Desktop/App\u6E2C\u8A66/HelloFramework/Swift Nib Framework/XibFrameWork/DownloadSDK/DownloadSDK/DownloadView.swift": [9223372036, 854775807]

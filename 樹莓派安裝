@@ -1,0 +1,57 @@
+
+mac 完整清除 記憶卡
+diskutil eraseDisk FAT32 PI /dev/disk2
+
+查看 樹莓派 kernal 版本
+uname -a
+
+安裝 樹莓派
+
+diskutil list
+sudo diskutil unmountDisk /dev/disk2
+sudo dd bs=1m if=raspbian.img of=/dev/rdisk2
+
+鍵盤設定成美式鍵盤分佈（預設為英式）
+http://blogger.gtwang.org/2014/12/raspberry-pi-keyboard-config.html
+
+參考：https://www.raspberrypi.com.tw/tutorial/basic/
+樹莓派安裝 VNC Server
+sudo apt-get install tightvncserver
+
+樹莓派啟動 VNC Server
+vncserver (第一次輸入要設定連線密碼，與是否只允許一個連線)
+
+輸入 ifconfig 看 wlan 中的 inet ip
+
+
+mac 下載 vncviwer
+在連線的 ip 輸入 樹莓派的 ip port 預設為 5901
+ex : 192.168.0.1:5901
+在輸入密碼就 OK
+
+
+安裝 mosquitto 與 client
+apt-get install mosquitto mosquitto-clients
+
+手機wifi ip :172.20.10.9
+連接的 port :1883
+
+開啟 關閉 mosquitto： sudo service mosquitto start / stop
+查看 mosquitto 狀態： sudo service mosquitto status
+
+訂閱主題：
+mosquitto_sub -t gtwang/test 
+
+發布訊息到指定主題：
+mosquitto_pub -t gtwang/test -m "Hello, world!"
+
+
+
+安裝 node.js
+wget https://nodejs.org/dist/latest-v9.x/node-v9.11.1-linux-armv7l.tar.gz
+解壓縮
+tar -xvf node-v9.11.1-linux-armv7l.tar.gz
+跳到下載資料夾
+cd node-v9.11.1-linux-armv7l
+移動到 local
+sudo cp -R * /usr/local/
