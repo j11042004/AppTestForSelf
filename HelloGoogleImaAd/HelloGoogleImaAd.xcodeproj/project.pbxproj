@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BA386F23D0377400BBA1D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA386E23D0377400BBA1D1 /* AppDelegate.swift */; };
+		04BA387123D0377400BBA1D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA387023D0377400BBA1D1 /* SceneDelegate.swift */; };
+		04BA387323D0377400BBA1D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA387223D0377400BBA1D1 /* ViewController.swift */; };
+		04BA387623D0377400BBA1D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA387423D0377400BBA1D1 /* Main.storyboard */; };
+		04BA387823D0377700BBA1D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BA387723D0377700BBA1D1 /* Assets.xcassets */; };
+		04BA387B23D0377700BBA1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BA387923D0377700BBA1D1 /* LaunchScreen.storyboard */; };
+		4475DC34A9FE24D85A126CCF /* Pods_HelloGoogleImaAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0397677892145E35601A98C /* Pods_HelloGoogleImaAd.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04BA386B23D0377400BBA1D1 /* HelloGoogleImaAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloGoogleImaAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04BA386E23D0377400BBA1D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04BA387023D0377400BBA1D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04BA387223D0377400BBA1D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04BA387523D0377400BBA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04BA387723D0377700BBA1D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04BA387A23D0377700BBA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04BA387C23D0377700BBA1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D91384AEB975E0B48A92CA9 /* Pods-HelloGoogleImaAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloGoogleImaAd.release.xcconfig"; path = "Target Support Files/Pods-HelloGoogleImaAd/Pods-HelloGoogleImaAd.release.xcconfig"; sourceTree = "<group>"; };
+		C0397677892145E35601A98C /* Pods_HelloGoogleImaAd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloGoogleImaAd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1BFF01277E88823484E7DF /* Pods-HelloGoogleImaAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloGoogleImaAd.debug.xcconfig"; path = "Target Support Files/Pods-HelloGoogleImaAd/Pods-HelloGoogleImaAd.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04BA386823D0377400BBA1D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4475DC34A9FE24D85A126CCF /* Pods_HelloGoogleImaAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04BA386223D0377300BBA1D1 = {
+			isa = PBXGroup;
+			children = (
+				04BA386D23D0377400BBA1D1 /* HelloGoogleImaAd */,
+				04BA386C23D0377400BBA1D1 /* Products */,
+				B10AFDCC881C96585B910021 /* Pods */,
+				F510EB8D32E0E9467D5BB7CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04BA386C23D0377400BBA1D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04BA386B23D0377400BBA1D1 /* HelloGoogleImaAd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04BA386D23D0377400BBA1D1 /* HelloGoogleImaAd */ = {
+			isa = PBXGroup;
+			children = (
+				04BA386E23D0377400BBA1D1 /* AppDelegate.swift */,
+				04BA387023D0377400BBA1D1 /* SceneDelegate.swift */,
+				04BA387223D0377400BBA1D1 /* ViewController.swift */,
+				04BA387423D0377400BBA1D1 /* Main.storyboard */,
+				04BA387723D0377700BBA1D1 /* Assets.xcassets */,
+				04BA387923D0377700BBA1D1 /* LaunchScreen.storyboard */,
+				04BA387C23D0377700BBA1D1 /* Info.plist */,
+			);
+			path = HelloGoogleImaAd;
+			sourceTree = "<group>";
+		};
+		B10AFDCC881C96585B910021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD1BFF01277E88823484E7DF /* Pods-HelloGoogleImaAd.debug.xcconfig */,
+				7D91384AEB975E0B48A92CA9 /* Pods-HelloGoogleImaAd.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F510EB8D32E0E9467D5BB7CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0397677892145E35601A98C /* Pods_HelloGoogleImaAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04BA386A23D0377400BBA1D1 /* HelloGoogleImaAd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04BA387F23D0377700BBA1D1 /* Build configuration list for PBXNativeTarget "HelloGoogleImaAd" */;
+			buildPhases = (
+				F45924E990E983523D9F5457 /* [CP] Check Pods Manifest.lock */,
+				04BA386723D0377400BBA1D1 /* Sources */,
+				04BA386823D0377400BBA1D1 /* Frameworks */,
+				04BA386923D0377400BBA1D1 /* Resources */,
+				F169BC97B4F72E330A696FF8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloGoogleImaAd;
+			productName = HelloGoogleImaAd;
+			productReference = 04BA386B23D0377400BBA1D1 /* HelloGoogleImaAd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04BA386323D0377400BBA1D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Uran;
+				TargetAttributes = {
+					04BA386A23D0377400BBA1D1 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 04BA386623D0377400BBA1D1 /* Build configuration list for PBXProject "HelloGoogleImaAd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04BA386223D0377300BBA1D1;
+			productRefGroup = 04BA386C23D0377400BBA1D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04BA386A23D0377400BBA1D1 /* HelloGoogleImaAd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04BA386923D0377400BBA1D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BA387B23D0377700BBA1D1 /* LaunchScreen.storyboard in Resources */,
+				04BA387823D0377700BBA1D1 /* Assets.xcassets in Resources */,
+				04BA387623D0377400BBA1D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F169BC97B4F72E330A696FF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloGoogleImaAd/Pods-HelloGoogleImaAd-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloGoogleImaAd/Pods-HelloGoogleImaAd-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloGoogleImaAd/Pods-HelloGoogleImaAd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F45924E990E983523D9F5457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloGoogleImaAd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04BA386723D0377400BBA1D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04BA387323D0377400BBA1D1 /* ViewController.swift in Sources */,
+				04BA386F23D0377400BBA1D1 /* AppDelegate.swift in Sources */,
+				04BA387123D0377400BBA1D1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04BA387423D0377400BBA1D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BA387523D0377400BBA1D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04BA387923D0377700BBA1D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04BA387A23D0377700BBA1D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04BA387D23D0377700BBA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04BA387E23D0377700BBA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04BA388023D0377700BBA1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1BFF01277E88823484E7DF /* Pods-HelloGoogleImaAd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloGoogleImaAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloGoogleImaAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04BA388123D0377700BBA1D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D91384AEB975E0B48A92CA9 /* Pods-HelloGoogleImaAd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloGoogleImaAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloGoogleImaAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04BA386623D0377400BBA1D1 /* Build configuration list for PBXProject "HelloGoogleImaAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BA387D23D0377700BBA1D1 /* Debug */,
+				04BA387E23D0377700BBA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04BA387F23D0377700BBA1D1 /* Build configuration list for PBXNativeTarget "HelloGoogleImaAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04BA388023D0377700BBA1D1 /* Debug */,
+				04BA388123D0377700BBA1D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04BA386323D0377400BBA1D1 /* Project object */;
+}

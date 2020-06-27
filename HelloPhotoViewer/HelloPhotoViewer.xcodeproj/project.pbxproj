@@ -67,27 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				0430A114201EC6EC006313E5 /* AppDelegate.swift */,
-				0430A11D201EC6EC006313E5 /* Main.storyboard */,
-				04D93E13232F1FCA0069E4CA /* AlbumViewController.swift */,
-				04D93E16232F20510069E4CA /* PhotoInfoViewController.swift */,
+				0499F67B23FA20460019AD38 /* Model */,
+				0499F67A23FA202D0019AD38 /* Controller */,
 				0430A120201EC6EC006313E5 /* Assets.xcassets */,
-				04D93E15232F20510069E4CA /* PhotoLibrary */,
-				0430A122201EC6EC006313E5 /* LaunchScreen.storyboard */,
+				04D93E15232F20510069E4CA /* View */,
 				0430A125201EC6EC006313E5 /* Info.plist */,
 				0430A116201EC6EC006313E5 /* HelloPhotoViewer.xcdatamodeld */,
 			);
 			path = HelloPhotoViewer;
 			sourceTree = "<group>";
 		};
-		04D93E15232F20510069E4CA /* PhotoLibrary */ = {
+		0499F67A23FA202D0019AD38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04D93E13232F1FCA0069E4CA /* AlbumViewController.swift */,
+				04D93E16232F20510069E4CA /* PhotoInfoViewController.swift */,
+				04D93E19232F20510069E4CA /* PhotoMediaViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0499F67B23FA20460019AD38 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				04D93E17232F20510069E4CA /* PhotoLibraryMananger.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04D93E15232F20510069E4CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0430A122201EC6EC006313E5 /* LaunchScreen.storyboard */,
+				0430A11D201EC6EC006313E5 /* Main.storyboard */,
 				04D93E20232F21D80069E4CA /* ImageCollectCell.swift */,
-				04D93E19232F20510069E4CA /* PhotoMediaViewController.swift */,
 				04D93E1A232F20510069E4CA /* PhotoInfo.storyboard */,
 			);
-			path = PhotoLibrary;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

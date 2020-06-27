@@ -124,10 +124,10 @@ extension UNUserNotificationCenter {
         // app Icone 上顯示有幾則 notification 沒讀取的數字
         content.badge = badge
         if let soundName = soundName {
-            let sound = UNNotificationSound(named: soundName)
+            let sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: soundName))
             content.sound = sound
         }else{
-            content.sound = UNNotificationSound.default()
+            content.sound = UNNotificationSound.default
         }
         
         // 設置通知上的圖片

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta name="appleid-signin-client-id" content="com.uran.signwithapple.js">
+        <meta name="appleid-signin-scope" content="name email">
+        <meta name="appleid-signin-redirect-uri" content="https://example-app.com/redirect">
+        <meta name="appleid-signin-state" content="state">
+    </head>
+    <style>
+        .signin-button {
+            width: 210px;
+            height: 40px;
+        }
+        
+    </style>
+    <body>
+        <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+        <div id="appleid-signin" data-color="black" data-border="true" data-type="sign in"></div>
+
+        <script type="text/javascript">
+            AppleID.auth.init({
+                clientId : 'com.uran.signwithapple.js',
+                scope :  'name email',
+                redirectURI: 'https://example-app.com/redirect',
+                state : 'state'
+            });
+
+            //Listen for authorization success
+            document.addEventListener('AppleIDSignInOnSuccess', (data) => {
+                 //handle successful response
+            });
+            //Listen for authorization failures
+            document.addEventListener('AppleIDSignInOnFailure', (error) => {
+                 //handle error.
+            });
+        </script>
+    </body>
+</html>

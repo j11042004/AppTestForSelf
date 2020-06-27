@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ISu-7F-Zin">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Broadcast Setup View Controller-->
+        <scene sceneID="dux-iw-SU1">
+            <objects>
+                <viewController id="ISu-7F-Zin" customClass="BroadcastSetupViewController" customModule="BroadcastUploadSetupUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hnJ-Ld-r0M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iba-3V-mfd">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E8-xm-ED1">
+                                        <rect key="frame" x="224" y="260" width="66" height="30"/>
+                                        <state key="normal" title="Start Live"/>
+                                        <connections>
+                                            <action selector="startLive:" destination="ISu-7F-Zin" eventType="touchUpInside" id="HeF-1O-RY2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUB-72-pC4">
+                                        <rect key="frame" x="10" y="260" width="48" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="ISu-7F-Zin" eventType="touchUpInside" id="eHX-ue-Jls"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEu-6r-9Qk">
+                                        <rect key="frame" x="20" y="20" width="260" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rK0-3Z-K1V">
+                                        <rect key="frame" x="20" y="74" width="260" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8E8-xm-ED1" secondAttribute="trailing" constant="10" id="7mT-G8-7QY"/>
+                                    <constraint firstItem="rK0-3Z-K1V" firstAttribute="leading" secondItem="Iba-3V-mfd" secondAttribute="leading" constant="20" id="7q5-vk-RgM"/>
+                                    <constraint firstItem="jEu-6r-9Qk" firstAttribute="leading" secondItem="Iba-3V-mfd" secondAttribute="leading" constant="20" id="9PT-Pk-eC9"/>
+                                    <constraint firstItem="qUB-72-pC4" firstAttribute="leading" secondItem="Iba-3V-mfd" secondAttribute="leading" constant="10" id="Bdv-Fi-em9"/>
+                                    <constraint firstAttribute="bottom" secondItem="8E8-xm-ED1" secondAttribute="bottom" constant="10" id="Ic4-et-EPL"/>
+                                    <constraint firstAttribute="width" constant="300" id="QS3-p6-q3i"/>
+                                    <constraint firstAttribute="bottom" secondItem="qUB-72-pC4" secondAttribute="bottom" constant="10" id="Rhy-SD-OLK"/>
+                                    <constraint firstItem="jEu-6r-9Qk" firstAttribute="top" secondItem="Iba-3V-mfd" secondAttribute="top" constant="20" id="WF2-CJ-WJb"/>
+                                    <constraint firstAttribute="trailing" secondItem="jEu-6r-9Qk" secondAttribute="trailing" constant="20" id="YrN-yW-IQs"/>
+                                    <constraint firstAttribute="trailing" secondItem="rK0-3Z-K1V" secondAttribute="trailing" constant="20" id="bma-BI-fqL"/>
+                                    <constraint firstItem="rK0-3Z-K1V" firstAttribute="top" secondItem="jEu-6r-9Qk" secondAttribute="bottom" constant="20" id="hjC-J3-USZ"/>
+                                    <constraint firstAttribute="height" constant="300" id="zUY-R8-ZQC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.18529537671232876" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Iba-3V-mfd" firstAttribute="centerX" secondItem="hnJ-Ld-r0M" secondAttribute="centerX" id="Pmb-Ch-SZG"/>
+                            <constraint firstItem="Iba-3V-mfd" firstAttribute="centerY" secondItem="hnJ-Ld-r0M" secondAttribute="centerY" id="TYX-QJ-igm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a1r-8D-LVp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDP-BK-SYm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="-18"/>
+        </scene>
+    </scenes>
+</document>

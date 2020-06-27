@@ -9,11 +9,13 @@
 import UIKit
 import Crashlytics
 import Firebase
-class PlayerView: UIView {
-    var theClassName: String {
-        return String(describing: type(of: self))
-    }
+
+enum Result<T> {
+    case success(T)
+    case fail(Error)
 }
+typealias Completion<T> = (Result<T>)->Void
+
 class ViewController: UIViewController {
     enum FirebaseType : String {
         case crash = "崩潰測試"
@@ -24,23 +26,30 @@ class ViewController: UIViewController {
     let gaTrackId = "UA-126739995-1"
     
     var propertiesName = ""
-    var firebaseFuns = [FirebaseType]()
-    let player = PlayerView()
-
+    // 要執行的 Firebase 功能
+    var actions = [FirebaseType]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        firebaseFuns.append(.crash)
-        firebaseFuns.append(.analystic)
+        actions.append(.crash)
+        actions.append(.analystic)
         
-        self.view.addSubview(player)
-        
+
         NotificationCenter.default.addObserver(self, selector: #selector(deviceDidOrientation), name: UIApplication.didChangeStatusBarOrientationNotification, object: nil)
         self.deviceDidOrientation()
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let infoDict = Bundle.main.infoDictionary {
+            for (key , value) in infoDict{
+                NSLog("key : \(key) , value : \(value)")
+            }
+        }
+        
+    }
     @objc func deviceDidOrientation(){
         var orientation = "直向"
         switch UIApplication.shared.statusBarOrientation {
@@ -52,38 +61,41 @@ class ViewController: UIViewController {
             self.propertiesName = "Portrait"
             break
         }
+        // 傳送轉向資訊到 Firebase 分析
 //        Analytics.setUserProperty(self.propertiesName, forName: "Properties")
-        let event = "\(self.player.theClassName)_\(orientation)"
-        var parmeters = [String : Any]()
+        let display = Bundle.main.object(forInfoDictionaryKey: "CFBundleName")
+        let event = "\(display == nil ? "App" : "\(display!)")_\(orientation)"
+        var parameters = [String : Any]()
         
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd hh:mm:ss"
         let dateStr = dateFormatter.string(from: date)
-        parmeters["Time"] = dateStr
-        Analytics.logEvent(event, parameters: parmeters)
-        NSLog("分析要傳送的 Properties : \(self.propertiesName) time : \(date)")
+        parameters["Time"] = dateStr
+        parameters[AnalyticsParameterItemID] =  "id-\(Date())"
+        parameters[AnalyticsParameterItemName] =  "\(Date())"
+        parameters[AnalyticsParameterContentType] = "App 轉向"
+        Analytics.logEvent(event, parameters: parameters)
     }
 }
 
 extension ViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let funcs = self.firebaseFuns[indexPath.row]
+        let action = self.actions[indexPath.row]
         let cell = tableView.cellForRow(at: indexPath)
-        switch funcs {
+        switch action {
         case .crash: // Crash 測試
             Crashlytics.sharedInstance().crash()
             break
         case .analystic:
 //            Google 分析 ：點擊測試
-            let events = "Player測試"
+            let events = "Firebase分析測試"
             var parameters = [String : Any]()
-            parameters["Action測試"] = "Cell被點擊"
+            parameters["Action"] = "Cell被點擊"
             parameters[AnalyticsParameterItemID] =  "id-\(Date())"
             parameters[AnalyticsParameterItemName] =  "\(Date())"
             parameters[AnalyticsParameterContentType] = "TableViewType"
             Analytics.logEvent(events, parameters: parameters)
-            Analytics.logEvent(AnalyticsEventViewItem, parameters: parameters)
             break
         }
         cell?.setSelected(false, animated: true)
@@ -91,12 +103,12 @@ extension ViewController : UITableViewDelegate{
 }
 extension ViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return firebaseFuns.count
+        return actions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellID, for: indexPath)
-        cell.textLabel?.text = self.firebaseFuns[indexPath.row].rawValue
+        cell.textLabel?.text = self.actions[indexPath.row].rawValue
         return cell
     }
     

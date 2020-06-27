@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04667C2A238B701C0049325A /* LocalNoteSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04667C29238B701C0049325A /* LocalNoteSender.swift */; };
 		04CED668207C648700C51BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CED667207C648700C51BD0 /* AppDelegate.swift */; };
 		04CED66A207C648700C51BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CED669207C648700C51BD0 /* ViewController.swift */; };
 		04CED66D207C648700C51BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CED66B207C648700C51BD0 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04667C29238B701C0049325A /* LocalNoteSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNoteSender.swift; sourceTree = "<group>"; };
 		04CED664207C648700C51BD0 /* HelloLocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloLocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CED667207C648700C51BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CED669207C648700C51BD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				04CED667207C648700C51BD0 /* AppDelegate.swift */,
 				04CED669207C648700C51BD0 /* ViewController.swift */,
 				04CED66B207C648700C51BD0 /* Main.storyboard */,
+				04667C29238B701C0049325A /* LocalNoteSender.swift */,
 				04CED6EE207DBB7800C51BD0 /* UNUserNotificationCenterExtension.swift */,
 				04CED66E207C648900C51BD0 /* Assets.xcassets */,
 				04CED670207C648900C51BD0 /* LaunchScreen.storyboard */,
@@ -114,6 +117,7 @@
 				TargetAttributes = {
 					04CED663207C648700C51BD0 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -156,6 +160,7 @@
 			files = (
 				04CED6EF207DBB7800C51BD0 /* UNUserNotificationCenterExtension.swift in Sources */,
 				04CED66A207C648700C51BD0 /* ViewController.swift in Sources */,
+				04667C2A238B701C0049325A /* LocalNoteSender.swift in Sources */,
 				04CED668207C648700C51BD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,14 +308,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCFU5W6M6J;
 				INFOPLIST_FILE = HelloLocalNotification/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uran.local.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -322,14 +327,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCFU5W6M6J;
 				INFOPLIST_FILE = HelloLocalNotification/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uran.local.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

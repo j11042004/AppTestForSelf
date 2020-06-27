@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
+
+target 'HelloLoin' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for HelloLoin
+  pod 'LineSDKSwift'
+  pod 'FBSDKLoginKit'
+  pod 'FacebookLogin'
+  pod 'TwitterKit'
+
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+
+  pod 'GoogleSignIn'
+  pod 'Alamofire'
+  target 'HelloLoinTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HelloLoinUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

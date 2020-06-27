@@ -20,8 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let authRequireID = "NotiAuthenticationRequired"
     let notiInsertID = "NotiInsert"
     let notiCategoryID = "NotiCategory"
+    /// 推播詳細功能選項
+    var noteCategories : Set<UNNotificationCategory> {
+        var set = Set<UNNotificationCategory>()
+        
+        let a1 = UNNotificationAction(identifier: normalID, title: "Normal", options: [])
+        let a2 = UNNotificationAction(identifier: forGroundID, title: "將 App 叫到前景", options: [.foreground])
+        let a3 = UNNotificationAction(identifier: authRequireID, title: "解鎖 iPhone，並提醒可能有破損性", options: [.destructive,.authenticationRequired])
+        let a4 = UNTextInputNotificationAction(identifier: notiInsertID, title: "回覆", options: [])
+        let category = UNNotificationCategory(identifier: self.notiCategoryID, actions: [a1,a2,a3,a4], intentIdentifiers: [], options: [])
+        
+        set.insert(category)
+        
+        return set
+    }
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // 詢問是否支援推送服務，圖文(alert)、聲音(sound)、Icon上的數字(badge)
         self.unNoteCenter.requestAuthorization(options: [.alert, .sound, .badge, .carPlay]) { (granted, error) in
             if let error = error {
@@ -33,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("不允許使用本地通知")
             }
         }
-        let notiSet = self.setCategories()
+        let notiSet = noteCategories
         
         // 設定 Notification 的 Categories，即 notification 下的button 與 textField
         self.unNoteCenter.setNotificationCategories(notiSet)
@@ -93,7 +108,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate{
     }
     // 點擊通知後觸發的事件，一般未設置是開啟 app
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        
+        NSLog("推播被點開")
         completionHandler()
         
 /*
@@ -115,17 +130,4 @@ extension AppDelegate : UNUserNotificationCenterDelegate{
     
     
     
-    func setCategories() -> Set<UNNotificationCategory>{
-        var set = Set<UNNotificationCategory>()
-        
-        let a1 = UNNotificationAction(identifier: normalID, title: "Normal", options: [])
-        let a2 = UNNotificationAction(identifier: forGroundID, title: "將 App 叫到前景", options: [.foreground])
-        let a3 = UNNotificationAction(identifier: authRequireID, title: "解鎖 iPhone，並提醒可能有破損性", options: [.destructive,.authenticationRequired])
-        let a4 = UNTextInputNotificationAction(identifier: notiInsertID, title: "回覆", options: [])
-        let category = UNNotificationCategory(identifier: self.notiCategoryID, actions: [a1,a2,a3,a4], intentIdentifiers: [], options: [])
-        
-        set.insert(category)
-        
-        return set
-    }
 }

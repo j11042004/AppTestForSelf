@@ -35,12 +35,12 @@ class WkWebViewController: UIViewController {
 extension WkWebViewController{
     
     @objc private func reloadWkWebView(_ sender : UIBarButtonItem){
-        let urlStr = "https://zh.wikipedia.org/wiki/%E6%8E%A2%E9%9A%AA%E6%B4%BB%E5%AF%B6%E4%BA%BA%E7%89%A9%E8%A1%A8"
+        let urlStr = "https://www.google.com.tw/"
         let url : URL = URL(string: urlStr)!
         let request = URLRequest(url: url)
-        //        self.wkWebView.load(request)
+        self.wkWebView.load(request)
         
-        self.wkWebView.loadHTMLString(self.jsTextFieldAlertHtml, baseURL: nil)
+//        self.wkWebView.loadHTMLString(self.jsTextFieldAlertHtml, baseURL: nil)
         
     }
     private func showAlert(Title title : String? ,
@@ -157,7 +157,7 @@ extension WkWebViewController : WKNavigationDelegate{
         decisionHandler(WKNavigationActionPolicy.allow)
     }
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void){
-        
+        NSLog("decidePolicyFor navigationResponse")
         guard let urlStr = navigationResponse.response.url?.absoluteString else{
             decisionHandler(WKNavigationResponsePolicy.allow)
             return
@@ -167,32 +167,33 @@ extension WkWebViewController : WKNavigationDelegate{
         decisionHandler(WKNavigationResponsePolicy.cancel)
     }
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!){
-    
+        NSLog("didStartProvisionalNavigation navigation")
     }
     
     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!){
-    
+        NSLog("didReceiveServerRedirectForProvisionalNavigation")
     }
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error){
-    
+        NSLog("didFailProvisionalNavigation navigation")
     }
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!){
-    
+        NSLog("didCommit navigation")
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!){
+        NSLog("didFinish navigation")
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error){
-    
+        NSLog("didFail navigation")
     }
     
     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void){
+        NSLog("didReceive challenge")
         completionHandler(URLSession.AuthChallengeDisposition.useCredential , nil)
     }
     func webViewWebContentProcessDidTerminate(_ webView: WKWebView){
-    
-    
+        NSLog("webViewWebContentProcessDidTerminate")
     }
     
 }

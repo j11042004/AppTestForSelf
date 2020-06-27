@@ -41,37 +41,37 @@
                 window.webkit.messageHandlers.AppModel.postMessage('alert');
             }
         
-        function callJsConfirm() {
-            if (confirm('confirm', 'Objective-C call js to show confirm')) {
-                document.getElementById('jsParamFuncSpan').innerHTML
-                = 'true';
-            } else {
-                document.getElementById('jsParamFuncSpan').innerHTML
-                = 'false';
+            function callJsConfirm() {
+                if (confirm('confirm', 'Objective-C call js to show confirm')) {
+                    document.getElementById('jsParamFuncSpan').innerHTML
+                    = 'true';
+                } else {
+                    document.getElementById('jsParamFuncSpan').innerHTML
+                    = 'false';
+                }
+                
+                //用註冊的 MessageHandle 回傳 Message
+                window.webkit.messageHandlers.AppModel.postMessage('confirm');
+            }
+        
+            function callJsInput() {
+                var response = prompt('Hello', 'Please input your name:');
+                document.getElementById('jsParamFuncSpan').innerHTML = response;
+                
+                //用註冊的 MessageHandle 回傳 Message
+                window.webkit.messageHandlers.AppModel.postMessage(response);
+            }
+            function jscallSwift(){
+                
             }
             
-            //用註冊的 MessageHandle 回傳 Message
-            window.webkit.messageHandlers.AppModel.postMessage('confirm');
-        }
-        
-        function callJsInput() {
-            var response = prompt('Hello', 'Please input your name:');
-            document.getElementById('jsParamFuncSpan').innerHTML = response;
             
-            //用註冊的 MessageHandle 回傳 Message
-            window.webkit.messageHandlers.AppModel.postMessage(response);
-        }
-        function jscallSwift(){
-            
-        }
-        
-        
-        //注意哦，如果JS写错，可能在OC调用JS方法时，都会出错哦。
-        var jsParamFunc = function(argument) {
-            document.getElementById('jsParamFuncSpan').innerHTML
-            = argument['name'];
-        }
-        showAler();
+            //注意哦，如果JS写错，可能在OC调用JS方法时，都会出错哦。
+            var jsParamFunc = function(argument) {
+                document.getElementById('jsParamFuncSpan').innerHTML
+                = argument['name'];
+            }
+            showAlert();
             </script>
     </body>
 </html>

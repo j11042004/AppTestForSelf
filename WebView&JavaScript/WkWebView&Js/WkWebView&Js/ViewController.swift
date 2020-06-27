@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDelegate, WKUIDelegate {
+class ViewController: UIViewController {
     
     @IBOutlet weak var wkWebView: WKWebView!
     
@@ -85,12 +85,11 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
 //        }
 
     }
-    
-    
+}
+extension ViewController : WKNavigationDelegate  {
     // MARK: - WKWebView Delegate
     // 準備 Load
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        
     }
     // 開始 Load
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
@@ -107,10 +106,12 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
         NSLog("Load 失敗 : \(error.localizedDescription)")
     }
-    
-    // MARK: - WKWebView UIDelegate
+}
+// MARK: - WKWebView UIDelegate
+extension ViewController : WKUIDelegate {
     // 攔截 JavaScript 的 Alert
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+        NSLog("取得 javascript Alert")
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default){ ( _ ) in
             // 一定要用 completionHandler 回傳否則會 Crash
@@ -126,6 +127,7 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
     }
     // 攔截 JavaScript 的 輸入Alert
     func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        NSLog("取得 javascript 輸入 Alert")
         let alert = UIAlertController(title: nil, message: prompt, preferredStyle: .alert)
         alert.addTextField { (textField) in
             
@@ -162,16 +164,15 @@ class ViewController: UIViewController, WKScriptMessageHandler, WKNavigationDele
             completionHandler(true)
             
             DispatchQueue.main.async {
-                alert.dismiss(animated: true, completion: {
-                })
+                alert.dismiss(animated: true)
             }
         }
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
     }
-    
-    
-    // MARK: - WKScriptMessageHandler
+}
+// MARK: - WKScriptMessageHandler
+extension ViewController : WKScriptMessageHandler{
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         NSLog("message name : \(message.name)")
         NSLog("message body : \(message.body)")

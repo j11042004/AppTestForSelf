@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nO3-6e-YUL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="AppleSignIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d1-2V-jl4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xi-d2-cpM">
+                                        <rect key="frame" x="20" y="110" width="374" height="639"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIh-td-ZfM">
+                                        <rect key="frame" x="41.5" y="50" width="331" height="40"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1ye-an-mrK"/>
+                                        </constraints>
+                                        <state key="normal" title="登入"/>
+                                        <connections>
+                                            <action selector="appleSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iU2-a5-xLt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oIh-td-ZfM" firstAttribute="width" secondItem="6d1-2V-jl4" secondAttribute="width" multiplier="0.8" id="6dO-P7-d1f"/>
+                                    <constraint firstItem="oIh-td-ZfM" firstAttribute="top" secondItem="6d1-2V-jl4" secondAttribute="top" constant="50" id="BQ1-Iv-atA"/>
+                                    <constraint firstItem="oIh-td-ZfM" firstAttribute="centerX" secondItem="6d1-2V-jl4" secondAttribute="centerX" id="E0f-ZK-EuV"/>
+                                    <constraint firstItem="2Xi-d2-cpM" firstAttribute="top" secondItem="oIh-td-ZfM" secondAttribute="bottom" constant="20" id="MF0-5T-iOo"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Xi-d2-cpM" secondAttribute="trailing" constant="20" id="e20-Wg-Bio"/>
+                                    <constraint firstItem="2Xi-d2-cpM" firstAttribute="leading" secondItem="6d1-2V-jl4" secondAttribute="leading" constant="20" id="kKR-rT-fE7"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Xi-d2-cpM" secondAttribute="bottom" constant="20" id="vuE-T9-Zdi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6d1-2V-jl4" secondAttribute="trailing" id="BGT-st-sGD"/>
+                            <constraint firstItem="6d1-2V-jl4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SAW-7Z-1Jf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6d1-2V-jl4" secondAttribute="bottom" id="kQ7-Cu-Y7r"/>
+                            <constraint firstItem="6d1-2V-jl4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oOE-GH-Muf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="soV-eW-VAy"/>
+                    <connections>
+                        <outlet property="baseView" destination="6d1-2V-jl4" id="IFr-NQ-rTv"/>
+                        <outlet property="signInBtn" destination="oIh-td-ZfM" id="3mN-9p-HVA"/>
+                        <outlet property="textView" destination="2Xi-d2-cpM" id="ezg-pH-kAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="88.392857142857139"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="5wh-q6-RGw">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="sWv-x4-toF" customClass="WebViewController" customModule="AppleSignIn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zZG-Hl-Xc9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ve2-cU-0NJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qz3-dY-XX5" firstAttribute="trailing" secondItem="ve2-cU-0NJ" secondAttribute="trailing" id="1nL-dD-Nhu"/>
+                            <constraint firstItem="ve2-cU-0NJ" firstAttribute="leading" secondItem="Qz3-dY-XX5" secondAttribute="leading" id="PZo-5R-DuQ"/>
+                            <constraint firstItem="ve2-cU-0NJ" firstAttribute="height" secondItem="zZG-Hl-Xc9" secondAttribute="height" multiplier="0.5" id="lxj-Zr-wWx"/>
+                            <constraint firstItem="ve2-cU-0NJ" firstAttribute="top" secondItem="Qz3-dY-XX5" secondAttribute="top" id="qj5-Hb-YmY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qz3-dY-XX5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="sn2-8r-4wQ"/>
+                    <connections>
+                        <outlet property="webView" destination="ve2-cU-0NJ" id="Ddd-tk-WUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8VJ-Kq-vNV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="781"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gib-Yh-F5X">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nO3-6e-YUL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Mo-p1-3VC">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Pu8-7G-y4l"/>
+                        <segue destination="sWv-x4-toF" kind="relationship" relationship="viewControllers" id="kNw-dI-MPj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7T-4w-xui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+</document>

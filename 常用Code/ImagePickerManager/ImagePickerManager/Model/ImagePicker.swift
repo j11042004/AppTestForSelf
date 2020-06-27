@@ -151,16 +151,16 @@ class ImagePicker: NSObject {
             self.dismissPickerControllerAlert(Title: "錯誤！！", Message: "請檢查相機或選擇的來源是否有錯！！")
             return
         }
-        pickerController = UIImagePickerController()
-        pickerController.sourceType = type
-        
-        // 設定可支援 影片和圖片要 import MobileCoreServices
-        pickerController.mediaTypes = [kUTTypeImage ,kUTTypeMovie] as [String]
-        // 允許圖片做切割，在 ipad 上 實作時，只會出現左上角的 bug
-//        pickerController.allowsEditing = true
-        pickerController.delegate = self
-        
         DispatchQueue.main.async {
+            self.pickerController = UIImagePickerController()
+            self.pickerController.sourceType = type
+        
+            // 設定可支援 影片和圖片要 import MobileCoreServices
+            self.pickerController.mediaTypes = [kUTTypeImage ,kUTTypeMovie] as [String]
+            // 允許圖片做切割，在 ipad 上 實作時，只會出現左上角的 bug
+//          pickerController.allowsEditing = true
+            
+            self.pickerController.delegate = self
             UIApplication.shared.keyWindow?.rootViewController?.present(self.pickerController, animated: true, completion: nil)
         }
     }

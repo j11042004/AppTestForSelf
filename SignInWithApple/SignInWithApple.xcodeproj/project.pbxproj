@@ -14,11 +14,14 @@
 		04444A8322AE430A0070C5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04444A8222AE430A0070C5DC /* Assets.xcassets */; };
 		04444A8622AE430A0070C5DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04444A8422AE430A0070C5DC /* LaunchScreen.storyboard */; };
 		04444A9022AE4FE90070C5DC /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04444A8F22AE4FE90070C5DC /* AuthenticationServices.framework */; };
-		04EC56D722AF4FFC00F954F3 /* AppleAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC56D622AF4FFC00F954F3 /* AppleAuthorizer.swift */; };
+		04728D6F2345A36700A35A25 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04728D6E2345A36700A35A25 /* KeychainItem.swift */; };
+		047824B82410E3270056FE76 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047824B72410E3260056FE76 /* WebViewController.swift */; };
+		047824BA2410E47A0056FE76 /* SignWithApple.html in Resources */ = {isa = PBXBuildFile; fileRef = 047824B92410E4790056FE76 /* SignWithApple.html */; };
+		0478E32224063AE700B06E92 /* AppleControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478E32124063AE700B06E92 /* AppleControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04444A7622AE43080070C5DC /* SignInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithApple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04444A7622AE43080070C5DC /* 麥卡貝SignInWithApple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "麥卡貝SignInWithApple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04444A7922AE43080070C5DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04444A7B22AE43080070C5DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04444A7D22AE43080070C5DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,9 +29,11 @@
 		04444A8222AE430A0070C5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04444A8522AE430A0070C5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04444A8722AE430A0070C5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04444A8D22AE44050070C5DC /* SignInWithApple.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithApple.entitlements; sourceTree = "<group>"; };
 		04444A8F22AE4FE90070C5DC /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		04EC56D622AF4FFC00F954F3 /* AppleAuthorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAuthorizer.swift; sourceTree = "<group>"; };
+		04728D6E2345A36700A35A25 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		047824B72410E3260056FE76 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		047824B92410E4790056FE76 /* SignWithApple.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = SignWithApple.html; path = SignWithApple_JS/SignWithApple.html; sourceTree = SOURCE_ROOT; };
+		0478E32124063AE700B06E92 /* AppleControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 		04444A6D22AE43080070C5DC = {
 			isa = PBXGroup;
 			children = (
+				04728D6B23459CCB00A35A25 /* BaseFile */,
 				04444A7822AE43080070C5DC /* SignInWithApple */,
 				04444A7722AE43080070C5DC /* Products */,
 				04444A8E22AE4FE90070C5DC /* Frameworks */,
@@ -55,7 +61,7 @@
 		04444A7722AE43080070C5DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04444A7622AE43080070C5DC /* SignInWithApple.app */,
+				04444A7622AE43080070C5DC /* 麥卡貝SignInWithApple.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,12 +69,6 @@
 		04444A7822AE43080070C5DC /* SignInWithApple */ = {
 			isa = PBXGroup;
 			children = (
-				04444A8D22AE44050070C5DC /* SignInWithApple.entitlements */,
-				04444A7922AE43080070C5DC /* AppDelegate.swift */,
-				04444A7B22AE43080070C5DC /* SceneDelegate.swift */,
-				04444A7D22AE43080070C5DC /* ViewController.swift */,
-				04EC56D622AF4FFC00F954F3 /* AppleAuthorizer.swift */,
-				04444A7F22AE43080070C5DC /* Main.storyboard */,
 				04444A8222AE430A0070C5DC /* Assets.xcassets */,
 				04444A8422AE430A0070C5DC /* LaunchScreen.storyboard */,
 				04444A8722AE430A0070C5DC /* Info.plist */,
@@ -82,6 +82,29 @@
 				04444A8F22AE4FE90070C5DC /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04728D6B23459CCB00A35A25 /* BaseFile */ = {
+			isa = PBXGroup;
+			children = (
+				04444A7922AE43080070C5DC /* AppDelegate.swift */,
+				04444A7B22AE43080070C5DC /* SceneDelegate.swift */,
+				04444A7D22AE43080070C5DC /* ViewController.swift */,
+				047824B72410E3260056FE76 /* WebViewController.swift */,
+				04444A7F22AE43080070C5DC /* Main.storyboard */,
+				047824B92410E4790056FE76 /* SignWithApple.html */,
+				0478E32324063AEF00B06E92 /* Module */,
+			);
+			path = BaseFile;
+			sourceTree = "<group>";
+		};
+		0478E32324063AEF00B06E92 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				04728D6E2345A36700A35A25 /* KeychainItem.swift */,
+				0478E32124063AE700B06E92 /* AppleControl.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +124,7 @@
 			);
 			name = SignInWithApple;
 			productName = SignInWithApple;
-			productReference = 04444A7622AE43080070C5DC /* SignInWithApple.app */;
+			productReference = 04444A7622AE43080070C5DC /* 麥卡貝SignInWithApple.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047824BA2410E47A0056FE76 /* SignWithApple.html in Resources */,
 				04444A8622AE430A0070C5DC /* LaunchScreen.storyboard in Resources */,
 				04444A8322AE430A0070C5DC /* Assets.xcassets in Resources */,
 				04444A8122AE43080070C5DC /* Main.storyboard in Resources */,
@@ -156,9 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04444A7E22AE43080070C5DC /* ViewController.swift in Sources */,
+				047824B82410E3270056FE76 /* WebViewController.swift in Sources */,
 				04444A7A22AE43080070C5DC /* AppDelegate.swift in Sources */,
 				04444A7C22AE43080070C5DC /* SceneDelegate.swift in Sources */,
-				04EC56D722AF4FFC00F954F3 /* AppleAuthorizer.swift in Sources */,
+				0478E32224063AE700B06E92 /* AppleControl.swift in Sources */,
+				04728D6F2345A36700A35A25 /* KeychainItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,14 +331,20 @@
 				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					SIGNINAPPLE,
+				);
 				INFOPLIST_FILE = SignInWithApple/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uran.sign.in.with.apple;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_SWIFT_FLAGS = "-DSIGNINAPPLE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.signwithapple;
+				PRODUCT_NAME = "麥卡貝SignInWithApple";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,14 +357,16 @@
 				CODE_SIGN_ENTITLEMENTS = SignInWithApple/SignInWithApple.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				GCC_PREPROCESSOR_DEFINITIONS = SIGNINAPPLE;
 				INFOPLIST_FILE = SignInWithApple/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.uran.sign.in.with.apple;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_SWIFT_FLAGS = "-DSIGNINAPPLE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.signwithapple;
+				PRODUCT_NAME = "麥卡貝SignInWithApple";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

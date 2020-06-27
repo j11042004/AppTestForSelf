@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A1D98D23863EB400B5453C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1D98C23863EB400B5453C /* AppDelegate.swift */; };
+		04A1D98F23863EB400B5453C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1D98E23863EB400B5453C /* ViewController.swift */; };
+		04A1D99223863EB400B5453C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A1D99023863EB400B5453C /* Main.storyboard */; };
+		04A1D99423863EB900B5453C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A1D99323863EB900B5453C /* Assets.xcassets */; };
+		04A1D99723863EB900B5453C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A1D99523863EB900B5453C /* LaunchScreen.storyboard */; };
+		04A1D9A223863EBA00B5453C /* HelloWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1D9A123863EBA00B5453C /* HelloWatchTests.swift */; };
+		04A1D9AD23863EBA00B5453C /* HelloWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1D9AC23863EBA00B5453C /* HelloWatchUITests.swift */; };
+		04A1D9B223863EBA00B5453C /* HelloWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 04A1D9B123863EBA00B5453C /* HelloWatch WatchKit App.app */; };
+		04A1D9B823863EBA00B5453C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A1D9B623863EBA00B5453C /* Interface.storyboard */; };
+		04A1D9BA23863EBA00B5453C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A1D9B923863EBA00B5453C /* Assets.xcassets */; };
+		04A1D9C123863EBB00B5453C /* HelloWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04A1D9C023863EBB00B5453C /* HelloWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04A1D9C623863EBB00B5453C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1D9C523863EBB00B5453C /* InterfaceController.swift */; };
+		04A1D9C823863EBB00B5453C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1D9C723863EBB00B5453C /* ExtensionDelegate.swift */; };
+		04A1D9CA23863EBB00B5453C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1D9C923863EBB00B5453C /* NotificationController.swift */; };
+		04A1D9CC23863EBB00B5453C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A1D9CB23863EBB00B5453C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04A1D99E23863EBA00B5453C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A1D98123863EB400B5453C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04A1D98823863EB400B5453C;
+			remoteInfo = HelloWatch;
+		};
+		04A1D9A923863EBA00B5453C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A1D98123863EB400B5453C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04A1D98823863EB400B5453C;
+			remoteInfo = HelloWatch;
+		};
+		04A1D9B323863EBA00B5453C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A1D98123863EB400B5453C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04A1D9B023863EBA00B5453C;
+			remoteInfo = "HelloWatch WatchKit App";
+		};
+		04A1D9C223863EBB00B5453C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04A1D98123863EB400B5453C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04A1D9BF23863EBB00B5453C;
+			remoteInfo = "HelloWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04A1D9D423863EBB00B5453C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04A1D9C123863EBB00B5453C /* HelloWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9D823863EBB00B5453C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				04A1D9B223863EBA00B5453C /* HelloWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04A1D98923863EB400B5453C /* HelloWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A1D98C23863EB400B5453C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04A1D98E23863EB400B5453C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04A1D99123863EB400B5453C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04A1D99323863EB900B5453C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A1D99623863EB900B5453C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04A1D99823863EB900B5453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A1D99D23863EBA00B5453C /* HelloWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A1D9A123863EBA00B5453C /* HelloWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWatchTests.swift; sourceTree = "<group>"; };
+		04A1D9A323863EBA00B5453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A1D9A823863EBA00B5453C /* HelloWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A1D9AC23863EBA00B5453C /* HelloWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWatchUITests.swift; sourceTree = "<group>"; };
+		04A1D9AE23863EBA00B5453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A1D9B123863EBA00B5453C /* HelloWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HelloWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A1D9B723863EBA00B5453C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		04A1D9B923863EBA00B5453C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A1D9BB23863EBA00B5453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A1D9C023863EBB00B5453C /* HelloWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HelloWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A1D9C523863EBB00B5453C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		04A1D9C723863EBB00B5453C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		04A1D9C923863EBB00B5453C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		04A1D9CB23863EBB00B5453C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04A1D9CD23863EBB00B5453C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A1D9CE23863EBB00B5453C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04A1D98623863EB400B5453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D99A23863EBA00B5453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9A523863EBA00B5453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9BD23863EBB00B5453C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A1D98023863EB400B5453C = {
+			isa = PBXGroup;
+			children = (
+				04A1D98B23863EB400B5453C /* HelloWatch */,
+				04A1D9A023863EBA00B5453C /* HelloWatchTests */,
+				04A1D9AB23863EBA00B5453C /* HelloWatchUITests */,
+				04A1D9B523863EBA00B5453C /* HelloWatch WatchKit App */,
+				04A1D9C423863EBB00B5453C /* HelloWatch WatchKit Extension */,
+				04A1D98A23863EB400B5453C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04A1D98A23863EB400B5453C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A1D98923863EB400B5453C /* HelloWatch.app */,
+				04A1D99D23863EBA00B5453C /* HelloWatchTests.xctest */,
+				04A1D9A823863EBA00B5453C /* HelloWatchUITests.xctest */,
+				04A1D9B123863EBA00B5453C /* HelloWatch WatchKit App.app */,
+				04A1D9C023863EBB00B5453C /* HelloWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04A1D98B23863EB400B5453C /* HelloWatch */ = {
+			isa = PBXGroup;
+			children = (
+				04A1D98C23863EB400B5453C /* AppDelegate.swift */,
+				04A1D98E23863EB400B5453C /* ViewController.swift */,
+				04A1D99023863EB400B5453C /* Main.storyboard */,
+				04A1D99323863EB900B5453C /* Assets.xcassets */,
+				04A1D99523863EB900B5453C /* LaunchScreen.storyboard */,
+				04A1D99823863EB900B5453C /* Info.plist */,
+			);
+			path = HelloWatch;
+			sourceTree = "<group>";
+		};
+		04A1D9A023863EBA00B5453C /* HelloWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				04A1D9A123863EBA00B5453C /* HelloWatchTests.swift */,
+				04A1D9A323863EBA00B5453C /* Info.plist */,
+			);
+			path = HelloWatchTests;
+			sourceTree = "<group>";
+		};
+		04A1D9AB23863EBA00B5453C /* HelloWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04A1D9AC23863EBA00B5453C /* HelloWatchUITests.swift */,
+				04A1D9AE23863EBA00B5453C /* Info.plist */,
+			);
+			path = HelloWatchUITests;
+			sourceTree = "<group>";
+		};
+		04A1D9B523863EBA00B5453C /* HelloWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				04A1D9B623863EBA00B5453C /* Interface.storyboard */,
+				04A1D9B923863EBA00B5453C /* Assets.xcassets */,
+				04A1D9BB23863EBA00B5453C /* Info.plist */,
+			);
+			path = "HelloWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		04A1D9C423863EBB00B5453C /* HelloWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04A1D9C523863EBB00B5453C /* InterfaceController.swift */,
+				04A1D9C723863EBB00B5453C /* ExtensionDelegate.swift */,
+				04A1D9C923863EBB00B5453C /* NotificationController.swift */,
+				04A1D9CB23863EBB00B5453C /* Assets.xcassets */,
+				04A1D9CD23863EBB00B5453C /* Info.plist */,
+				04A1D9CE23863EBB00B5453C /* PushNotificationPayload.apns */,
+			);
+			path = "HelloWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04A1D98823863EB400B5453C /* HelloWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A1D9D923863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatch" */;
+			buildPhases = (
+				04A1D98523863EB400B5453C /* Sources */,
+				04A1D98623863EB400B5453C /* Frameworks */,
+				04A1D98723863EB400B5453C /* Resources */,
+				04A1D9D823863EBB00B5453C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04A1D9B423863EBA00B5453C /* PBXTargetDependency */,
+			);
+			name = HelloWatch;
+			productName = HelloWatch;
+			productReference = 04A1D98923863EB400B5453C /* HelloWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04A1D99C23863EBA00B5453C /* HelloWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A1D9DC23863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatchTests" */;
+			buildPhases = (
+				04A1D99923863EBA00B5453C /* Sources */,
+				04A1D99A23863EBA00B5453C /* Frameworks */,
+				04A1D99B23863EBA00B5453C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04A1D99F23863EBA00B5453C /* PBXTargetDependency */,
+			);
+			name = HelloWatchTests;
+			productName = HelloWatchTests;
+			productReference = 04A1D99D23863EBA00B5453C /* HelloWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04A1D9A723863EBA00B5453C /* HelloWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A1D9DF23863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatchUITests" */;
+			buildPhases = (
+				04A1D9A423863EBA00B5453C /* Sources */,
+				04A1D9A523863EBA00B5453C /* Frameworks */,
+				04A1D9A623863EBA00B5453C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04A1D9AA23863EBA00B5453C /* PBXTargetDependency */,
+			);
+			name = HelloWatchUITests;
+			productName = HelloWatchUITests;
+			productReference = 04A1D9A823863EBA00B5453C /* HelloWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		04A1D9B023863EBA00B5453C /* HelloWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A1D9D523863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatch WatchKit App" */;
+			buildPhases = (
+				04A1D9AF23863EBA00B5453C /* Resources */,
+				04A1D9D423863EBB00B5453C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04A1D9C323863EBB00B5453C /* PBXTargetDependency */,
+			);
+			name = "HelloWatch WatchKit App";
+			productName = "HelloWatch WatchKit App";
+			productReference = 04A1D9B123863EBA00B5453C /* HelloWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		04A1D9BF23863EBB00B5453C /* HelloWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04A1D9D123863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatch WatchKit Extension" */;
+			buildPhases = (
+				04A1D9BC23863EBB00B5453C /* Sources */,
+				04A1D9BD23863EBB00B5453C /* Frameworks */,
+				04A1D9BE23863EBB00B5453C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HelloWatch WatchKit Extension";
+			productName = "HelloWatch WatchKit Extension";
+			productReference = 04A1D9C023863EBB00B5453C /* HelloWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04A1D98123863EB400B5453C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Uran;
+				TargetAttributes = {
+					04A1D98823863EB400B5453C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					04A1D99C23863EBA00B5453C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 04A1D98823863EB400B5453C;
+					};
+					04A1D9A723863EBA00B5453C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 04A1D98823863EB400B5453C;
+					};
+					04A1D9B023863EBA00B5453C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					04A1D9BF23863EBB00B5453C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 04A1D98423863EB400B5453C /* Build configuration list for PBXProject "HelloWatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04A1D98023863EB400B5453C;
+			productRefGroup = 04A1D98A23863EB400B5453C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04A1D98823863EB400B5453C /* HelloWatch */,
+				04A1D99C23863EBA00B5453C /* HelloWatchTests */,
+				04A1D9A723863EBA00B5453C /* HelloWatchUITests */,
+				04A1D9B023863EBA00B5453C /* HelloWatch WatchKit App */,
+				04A1D9BF23863EBB00B5453C /* HelloWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04A1D98723863EB400B5453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1D99723863EB900B5453C /* LaunchScreen.storyboard in Resources */,
+				04A1D99423863EB900B5453C /* Assets.xcassets in Resources */,
+				04A1D99223863EB400B5453C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D99B23863EBA00B5453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9A623863EBA00B5453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9AF23863EBA00B5453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1D9BA23863EBA00B5453C /* Assets.xcassets in Resources */,
+				04A1D9B823863EBA00B5453C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9BE23863EBB00B5453C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1D9CC23863EBB00B5453C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04A1D98523863EB400B5453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1D98F23863EB400B5453C /* ViewController.swift in Sources */,
+				04A1D98D23863EB400B5453C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D99923863EBA00B5453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1D9A223863EBA00B5453C /* HelloWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9A423863EBA00B5453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1D9AD23863EBA00B5453C /* HelloWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04A1D9BC23863EBB00B5453C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A1D9CA23863EBB00B5453C /* NotificationController.swift in Sources */,
+				04A1D9C823863EBB00B5453C /* ExtensionDelegate.swift in Sources */,
+				04A1D9C623863EBB00B5453C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04A1D99F23863EBA00B5453C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04A1D98823863EB400B5453C /* HelloWatch */;
+			targetProxy = 04A1D99E23863EBA00B5453C /* PBXContainerItemProxy */;
+		};
+		04A1D9AA23863EBA00B5453C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04A1D98823863EB400B5453C /* HelloWatch */;
+			targetProxy = 04A1D9A923863EBA00B5453C /* PBXContainerItemProxy */;
+		};
+		04A1D9B423863EBA00B5453C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04A1D9B023863EBA00B5453C /* HelloWatch WatchKit App */;
+			targetProxy = 04A1D9B323863EBA00B5453C /* PBXContainerItemProxy */;
+		};
+		04A1D9C323863EBB00B5453C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04A1D9BF23863EBB00B5453C /* HelloWatch WatchKit Extension */;
+			targetProxy = 04A1D9C223863EBB00B5453C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04A1D99023863EB400B5453C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A1D99123863EB400B5453C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04A1D99523863EB900B5453C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A1D99623863EB900B5453C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04A1D9B623863EBA00B5453C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04A1D9B723863EBA00B5453C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04A1D9CF23863EBB00B5453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04A1D9D023863EBB00B5453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04A1D9D223863EBB00B5453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = "HelloWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Debug;
+		};
+		04A1D9D323863EBB00B5453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = "HelloWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Release;
+		};
+		04A1D9D623863EBB00B5453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				IBSC_MODULE = HelloWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HelloWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Debug;
+		};
+		04A1D9D723863EBB00B5453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				IBSC_MODULE = HelloWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "HelloWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Release;
+		};
+		04A1D9DA23863EBB00B5453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04A1D9DB23863EBB00B5453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04A1D9DD23863EBB00B5453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWatch.app/HelloWatch";
+			};
+			name = Debug;
+		};
+		04A1D9DE23863EBB00B5453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWatch.app/HelloWatch";
+			};
+			name = Release;
+		};
+		04A1D9E023863EBB00B5453C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloWatch;
+			};
+			name = Debug;
+		};
+		04A1D9E123863EBB00B5453C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SCFU5W6M6J;
+				INFOPLIST_FILE = HelloWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.uran.HelloWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloWatch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04A1D98423863EB400B5453C /* Build configuration list for PBXProject "HelloWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A1D9CF23863EBB00B5453C /* Debug */,
+				04A1D9D023863EBB00B5453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A1D9D123863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A1D9D223863EBB00B5453C /* Debug */,
+				04A1D9D323863EBB00B5453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A1D9D523863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A1D9D623863EBB00B5453C /* Debug */,
+				04A1D9D723863EBB00B5453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A1D9D923863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A1D9DA23863EBB00B5453C /* Debug */,
+				04A1D9DB23863EBB00B5453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A1D9DC23863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A1D9DD23863EBB00B5453C /* Debug */,
+				04A1D9DE23863EBB00B5453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04A1D9DF23863EBB00B5453C /* Build configuration list for PBXNativeTarget "HelloWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04A1D9E023863EBB00B5453C /* Debug */,
+				04A1D9E123863EBB00B5453C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04A1D98123863EB400B5453C /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_HelloReplayKit {
+  umbrella header "Pods-HelloReplayKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
