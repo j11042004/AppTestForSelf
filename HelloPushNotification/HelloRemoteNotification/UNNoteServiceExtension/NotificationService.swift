@@ -48,7 +48,7 @@ class NotificationService: UNNotificationServiceExtension {
                 
                 do {
                     // 將 image 寫到目表檔案中
-                    try UIImageJPEGRepresentation(img, 1)?.write(to: pathUrl, options: Data.WritingOptions.atomicWrite)
+                    try img.jpegData(compressionQuality: 1)?.write(to: pathUrl, options: Data.WritingOptions.atomicWrite)
                     let attachment = try UNNotificationAttachment(identifier: "serviceExtension", url: pathUrl, options: nil)
                     self.bestAttemptContent?.attachments = [attachment]
                     // 回覆 新的通知內容

@@ -47,7 +47,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
         self.label?.numberOfLines = 0
         
         let img = UIImage(named: "sakura.jpg")
-        self.imgView.contentMode = UIViewContentMode.scaleAspectFit
+        self.imgView.contentMode = UIView.ContentMode.scaleAspectFit
         self.imgView.image = img
     }
     
